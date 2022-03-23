@@ -1,0 +1,155 @@
+.projects{     
+    height: 100%;
+    background-color: rgba(173, 216, 230, 0.63);
+    .project-content{
+        
+        height:100%;
+        font-family: 'Truculenta', sans-serif;
+        a{text-decoration: none;}
+        .card1{
+            margin-bottom:20%;
+            margin: 30px;
+            height:40vh;
+            background-color: rgb(15, 15, 15);
+            color: white;
+                   
+            article{
+                padding-top:20px;
+                flex-basis:50%;
+                width:90%;
+                color:white;
+                margin: 10px 10px 10px 10px;
+                margin:auto;
+                h1{
+                    font-size:40px;
+                    color:white;
+                    padding-top:20px;
+                    margin-bottom:15px;
+                    display:flex;
+                    justify-content: center;
+                    align-items: center;
+                }
+                p{
+                    font-size:22px;
+                    text-align: center;
+                    padding-bottom: 20px;
+                }
+                a{
+                    margin-left:10px;
+                    color:white;
+                    font-size:20px;
+                    text-decoration: none;
+                }
+                a:hover{
+                    color:#62f0e4;
+                }
+            }
+        }
+        .card2{
+            margin-bottom:20%;
+            margin: 30px;
+            height:40vh;
+            background-color: rgb(15,15,15);
+            color: white;
+                   
+            article{
+                padding-top:20px;
+                flex-basis:50%;
+                width:90%;
+                color:white;
+                margin: 10px 10px 10px 10px;
+                margin:auto;
+                h1{
+                    font-size:40px;
+                    color:white;
+                    padding-top:20px;
+                    margin-bottom:15px;
+                    display:flex;
+                    justify-content: center;
+                    align-items: center;
+                }
+                p{
+                    font-size:22px;
+                    text-align: center;
+                    padding-bottom: 20px;
+                }
+                a{
+                    margin-left:10px;
+                    color:white;
+                    font-size:20px;
+                    text-decoration: none;
+                }
+                a:hover{
+                    color:#62f0e4;
+                }
+            }
+        }
+        .card3{
+            margin-bottom:20%;
+            margin: 30px;
+            height:40vh;
+            background-color: rgb(15,15,15);
+            color: white;
+                   
+            article{
+                padding-top:20px;
+                flex-basis:50%;
+                width:90%;
+                color:white;
+                margin: 10px 10px 10px 10px;
+                margin:auto;
+                h1{
+                    font-size:40px;
+                    color:white;
+                    padding-top:20px;
+                    margin-bottom:15px;
+                    display:flex;
+                    justify-content: center;
+                    align-items: center;
+                }
+                p{
+                    font-size:22px;
+                    text-align: center;
+                    padding-bottom: 20px;
+                }
+                a{
+                    margin-left:10px;
+                    color:white;
+                    font-size:20px;
+                    text-decoration: none;
+                }
+                a:hover{
+                    color:#62f0e4;
+                }
+            }
+        }
+    }
+    .card1:hover{
+    background-color:coral;
+    article{
+        h1{
+            color:black;
+        }
+    color:black;
+    }
+
+    }
+    .card2:hover{
+        background-color: rgb(99, 219, 99);
+        article{
+            h1{
+                color:black;
+            }
+        color:black;
+        }
+    }
+    .card3:hover{
+        background-color: rgb(184, 122, 255);
+        article{
+            h1{
+                color:black;
+            }
+        color:black;
+        }
+    }
+}

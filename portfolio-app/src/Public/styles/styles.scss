@@ -1,0 +1,25 @@
+@import url('https://fonts.googleapis.com/css2?family=Black+Han+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Truculenta&display=swap');
+
+//PAGES
+@import './pages/Contact';
+@import './pages/About';
+@import './pages/Home';
+@import './pages/Projects';
+
+//COMPONENTS
+@import './components/Banner';
+@import './components/Burger';
+@import './components/Footer';
+@import './components/Navbar';
+@import './components/Skills';
+@import './components/ProjectCard';
+@import './components/AboutContent';
+@import './components/BouncingArrow';
+@import './components/ProjectOneCarosel';
+@import './components/ProjectTwoCarosel';
+@import './components/ProjectThreeCarosel';
+
+html {
+    scroll-behavior: smooth;
+  }

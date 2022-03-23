@@ -1,0 +1,71 @@
+.burger{
+    font-family: 'Shadows Into Light';
+    //font-family: 'Black Han Sans', sans-serif;
+    display: none;
+    background-color: black;
+    width:100%;
+    height:100%;
+    position:relative;
+    border-bottom:1px solid white;
+    .burger-btn{
+        background: linear-gradient(60deg, #0d32ad, #62f0e4);
+        height:30px;
+        width:30px;
+        margin-bottom:3%;
+        margin-top:3%;
+        margin-left:3%;
+        border:2px solid white;
+        border-radius: 20%;
+    }
+    .burger-nav{
+        background: black;
+        position:absolute;
+        z-index:9;
+        top:10;
+        width:100%;
+        height:20vh;
+        padding-top:5px;
+        padding-bottom:10px;
+        a{
+            margin-left:2%;
+            margin-top:5px;
+            display:flex;
+            flex-wrap:wrap;
+            flex-basis:10%;
+            color:white;
+            text-decoration: none;
+            font-size:25px;
+        }
+    } 
+    a:hover{
+        color:#62f0e4;
+    }
+}
+
+@media(max-width:600px){
+    .burger{
+        display:inline-block;
+
+    }
+}
+@media(max-width:520px){
+    .burger{
+        .burger-nav{
+            a{
+                font-size:20px;
+            }
+        }
+    }
+  
+}
+@media(max-width:400px){
+    .burger{
+        .burger-nav{
+            height:14vh;
+            a{
+                font-size:18px;
+            }
+        }
+    }
+  
+}

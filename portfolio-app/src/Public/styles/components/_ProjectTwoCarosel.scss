@@ -1,0 +1,48 @@
+.project-two-carosel{
+    font-family: 'Truculenta', sans-serif;
+    height: 100%;
+        .Card{
+        .carousel-root{
+            height: 70vh;
+            width: 100%;
+                .carousel{
+                    display: none;
+                    height: 100%;
+                }
+                .carousel-slider{
+                display: inline-block;
+                .carousel-status{
+                    display: none;
+                }
+                .slider-wrapper{
+                    height: 100%;
+                    width: 100%;
+                .slider{
+                width: 100%;
+                    .slide{
+                        height: 200px;
+                    }
+            .selected{
+            width: 100%;
+            height: 100%;
+            div{
+            height: 100%;
+            width: 100%;
+            figure{
+            height: 70vh;
+            margin: 0%;
+            width: 100%;
+            img{
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+                }
+            }
+            }
+        }
+                }
+            }
+        }
+    }
+}
+}

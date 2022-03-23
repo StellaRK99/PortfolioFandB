@@ -1,0 +1,63 @@
+
+
+.nav-bar{
+    font-family: 'Shadows Into Light';
+    //font-family: 'Black Han Sans', sans-serif;
+    background-color: black;
+    padding-bottom:10px;
+    padding-left:20px;
+    height:100px;
+
+    nav{ 
+        margin-left:10%;
+        margin-right:10%;
+        background-color: black;
+        width:80%;
+        display:flex;
+        justify-content: space-between;
+ 
+        a{
+            margin-top:15px;
+            padding-bottom:5px;
+            color:white;
+            font-size:32px;
+            text-decoration:none;
+            position: relative;
+            text-decoration: none;
+            display: inline-block;
+            padding: 15px 20px;
+        }
+        a:after{
+            background: none repeat scroll 0 0 transparent;
+            bottom: 0;
+            content: "";
+            display: block;
+            height: 3px;
+            left: 50%;
+            position: absolute;
+            background: #62f0e4;
+            transition: width 0.3s ease 0s, left .5s ease 0s;
+            width: 0;
+        }
+
+        a:hover{
+            border-bottom:2px solid white;
+            color:#62f0e4;
+ 
+        }
+        a:hover:after{
+            width: 100%; 
+            left: 0; 
+        }
+    
+    }
+
+}
+
+@media(max-width:600px){
+    .nav-bar{
+        display:none;
+
+    }
+    
+}

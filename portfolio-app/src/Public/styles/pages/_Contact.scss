@@ -1,0 +1,79 @@
+.contact{
+    background-color: rgba(173, 216, 230, 0.63);
+    font-family: 'Truculenta', sans-serif;
+    width:100%;
+    .contact-content{
+        height:100vh;
+        h1{
+            margin-top:20px;
+            margin-bottom: 20px;
+            font-size:40px;
+            color:black;
+            text-shadow: -2px -2px 0 white;
+            text-align: center;
+        }
+        form{
+            background-color: white;
+            padding: 10px 10px 10px 10px;
+            border-radius: 15px;
+            box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+            margin:auto;
+            display:flex;
+            flex-wrap:wrap;
+            width:50%;
+            input{
+                flex-basis:100%;
+                margin-left:5px;
+                margin-right:5px;
+                
+            }
+            textarea{
+                height:50px;
+                margin-left:5px;
+                flex-basis:100%;
+            }
+            label{
+                color:black;
+                flex-basis:100%;
+                font-size:25px;
+                margin-left:5px;
+            }
+            button{
+                flex-basis:100%;
+                width:60px;
+                font-size:20px;
+                font-family: 'Truculenta', sans-serif;
+                background-color: black;
+                border:2px solid white;
+                border-radius:15px;
+                margin-left:5px;
+                margin-top:10px;
+                color:white;
+
+            }
+            button:hover{
+                transform: scale(1.1);
+                
+            }
+        }
+}
+}
+
+@media(max-width:450px){
+    .contact{
+        .contact-content{
+            form{
+                input{
+                    width:90%;
+                }
+                label{
+                    font-size:20px;
+                }
+                button{
+                    font-size:16px;
+                }
+            }
+        }
+    }
+    
+}

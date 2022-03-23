@@ -1,0 +1,137 @@
+
+    .about-content{
+    font-family: 'Truculenta', sans-serif;
+    margin-top:5%;
+    h1{
+        font-size:40px;
+        color:black;
+        text-shadow: -2px -2px 0 white;
+        padding-top:20px;
+        margin-bottom:15px;
+        display:flex;
+        justify-content: center;
+        align-items: center;
+    }
+    article{
+        box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+        border-radius:15px;
+        margin-left:30px;
+        margin-right:30px;
+        height:70vh;
+        //background-color: rgba(0, 0, 0, 0.918);
+        background-color: white;
+        width:60%;
+        margin:auto;
+        p{
+            color:black;
+            padding: 15px 15px 15px 15px;
+            margin:auto;
+            padding-top:30px;
+            font-size:24px;
+            border-radius:15%;
+            text-align: center;
+        
+        }
+    }
+    img{
+        width:200px;
+        height:200px;
+        box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+        border-radius:50%;
+        display:block;
+        margin:auto;
+        margin-bottom:30px;
+    }
+}
+
+@media(max-width: 1220px){
+
+    .about-content{
+        article{
+        p{
+            font-size:22px;
+        }
+    }
+    }
+
+
+}
+
+@media(max-width: 1050px){
+
+    .about-content{
+        article{
+        p{
+            font-size:21px;
+        }
+    }
+    }
+
+
+}
+@media(max-width: 926px){
+
+        .about-content{
+            article{
+            p{
+                font-size:20px;
+            }
+        }
+        }
+    
+  
+}
+
+@media(max-width: 830px){
+
+        .about-content{
+            article{
+                p{
+                    font-size:18px;
+                }
+            }
+        }
+    
+  
+}
+@media(max-width: 695px){
+
+    .about-content{
+        img{
+            width:150px;
+            height:150px;
+        }
+        article{
+            p{
+                font-size:16px;
+            }
+        }
+    }
+
+
+}
+@media(max-width: 569px){
+  
+        .about-content{
+           article{
+            p{
+                font-size:14px;
+
+            }
+           }
+               
+        }
+    
+}
+@media(max-width:462px){
+    
+        .about-content{
+            article{
+                p{
+                    font-size:12px;
+                }
+            }
+        
+        }
+    
+    }
