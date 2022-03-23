@@ -1,6 +1,6 @@
-const mysqlDatabase = require('./mySQLDatabase')
+
 const express = require('express')
-const jwt = require('./jwt')
+
 const usersRoutes = require('./Routers/users')
 const res = require('express/lib/response')
 const app = express()
@@ -9,7 +9,6 @@ const app = express()
 app.use(express.static('public'))
 app.use(express.json())
 app.use(express.urlencoded())
-app.use("/users", usersRoutes)
 app.use(express.static("build"))
 // ///////////////////////////////GET//////////////////////////////
 // app.get("/paintings", async(req, res) => {
