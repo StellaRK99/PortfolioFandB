@@ -1,25 +1,43 @@
-import React from 'react'
+import React, { useState } from 'react'
 import ProjectOneCarosel from '../Components/ProjectOneCarosel';
 import ProjectTwoCarosel from '../Components/ProjectTwoCarosel';
 import ProjectThreeCarosel from './ProjectThreeCarosel';
 import '../Public/styles/styles.css';
 
 function ProjectCards() {
+
+    const [tapped1, setTapped1]= useState(false)
+    const [tapped2, setTapped2]= useState(false)
+    const [tapped3, setTapped3]= useState(false)
+
+    function toggle1(){
+        setTapped1(!tapped1)
+        console.log(tapped1)
+    }
+    function toggle2(){
+        setTapped2(!tapped2)
+        console.log(tapped2)
+    }
+    function toggle3(){
+        setTapped3(!tapped3)
+        console.log(tapped3)
+    }
   return (
     <div className="home-content">
-
     <div className="card">
+        
         <div className="card-front">
         <article> 
             <h2>RuneDen</h2>
             <p>RuneDen is a centralized hub for gamers to download texture packs or seeds for their Minecraft worlds.
             This app was built using ReactJS for the frontend and utilizes a plethora of Amazon Web Services, such as Cognito User Pools,
             Lambda functions & layers, S3 Buckets, API Gateway, Amazon's own DynamoDB and more.</p>
+            <a href="#">Live Link</a>
+            
         </article>
         
         <div className="tools-used">
                 <h2>Tools Used</h2>
-                <div className="line"></div>
                 <ul>
                     <li>ReactJS</li>
                     <li>Amplify</li>
@@ -28,12 +46,24 @@ function ProjectCards() {
                     <li>Lambda</li>
                     <li>S3 Bucket</li>
                 </ul>
+                <button className="mobile-toggle" onClick={toggle1}>View Images</button>
             </div>
+            
+        </div>
+        <div className="card-back">
+        <ProjectOneCarosel />
         </div>
 
-        <div className="card-back">
-       <ProjectOneCarosel />
-        </div>
+
+        {tapped1
+        ?(<div className="card-front-mobile">
+        <ProjectOneCarosel />
+        <button onClick={toggle1}>Back</button>
+        </div>): <></>}
+      
+       
+
+       
     </div>
 
     <div className="card">
@@ -44,11 +74,12 @@ function ProjectCards() {
             was built using ReactJS for the frontend, NodeJS for the backend and uses MySql as the database.
             The design of this application aims to serve a very clean, simple interface that is easy and straightforward
             to navigate through.</p>
+            <a href="#">Live Link</a>
+            
         </article>   
         
         <div className="tools-used">
                 <h2>Tools Used</h2>
-                <div className="line"></div>
                 <ul>
                     <li>ReactJS</li>
                     <li>Amplify</li>
@@ -57,12 +88,21 @@ function ProjectCards() {
                     <li>Lambda</li>
                     <li>S3 Bucket</li>
                 </ul>
+                <button className="mobile-toggle" onClick={toggle2}>View Images</button>
             </div>
         </div>
         
         <div className="card-back">
           <ProjectTwoCarosel />
         </div>
+
+        {tapped2
+        ?(<div className="card-front-mobile">
+        <ProjectTwoCarosel />
+        <button onClick={toggle2}>Back</button>
+        </div>): <></>}
+      
+       
     </div>
 
     <div className="card">
@@ -71,11 +111,12 @@ function ProjectCards() {
             <h2>Dummy Inc</h2>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. At expedita vel, ex nihil praesentium impedit, nemo molestias veniam 
                 tenetur numquam porro natus alias voluptate dolor doloribus deleniti qui? Impedit, adipisci!</p>
+                <a href="#">Live Link</a>
+               
         </article>  
         
         <div className="tools-used">
                 <h2>Tools Used</h2>
-                <div className="line"></div>
                 <ul>
                     <li>ReactJS</li>
                     <li>Amplify</li>
@@ -84,6 +125,7 @@ function ProjectCards() {
                     <li>Lambda</li>
                     <li>S3 Bucket</li>
                 </ul>
+                <button className="mobile-toggle" onClick={toggle3}>View Images</button>
             </div> 
         </div>
 
@@ -91,6 +133,14 @@ function ProjectCards() {
         <ProjectThreeCarosel />
             
         </div>
+
+        {tapped3
+        ?(<div className="card-front-mobile">
+        <ProjectThreeCarosel />
+        <button onClick={toggle3}>Back</button>
+        </div>): <></>}
+      
+       
     </div>
 </div>
   )

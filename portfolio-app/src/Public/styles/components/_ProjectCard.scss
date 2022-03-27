@@ -8,8 +8,8 @@
  
     .card{
         display:flex;
-    justify-content: center;
-    align-items: center;
+        justify-content: center;
+        align-items: center;
         width:90%;
         flex-basis:100%;
         height:60vh;
@@ -19,6 +19,7 @@
         perspective: 150rem;
         position: relative;
         .card-front{
+            display: block;
             box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
             flex-basis:100%;
             height:60vh;
@@ -32,10 +33,8 @@
             background-color:white;
             article{
                 margin-bottom:5px;
-                
                 border-bottom: 1px solid rgb(15,15,15);
-                
-
+             
                 h2{
                     padding-left:5px;
                     color:white;
@@ -51,7 +50,10 @@
                     font-size:20px;
                     color:black;
                 }
+                
             }
+            
+        
             .tools-used{
                 width:100%;
                 h2{ 
@@ -68,14 +70,19 @@
                    
                     li{
                         font-size:20px;
-                        list-style-type: style auto;;
+                        list-style-type: style auto;
                     }
                 }
-            }
+               
+                    button{
+                       display:none;
+                    }
+                
+                
+               }
            
         }
         .card-back{
-            box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
             width:90%;
             flex-basis:100%;
             height:60vh;
@@ -93,7 +100,8 @@
         }
     
     }
-    .card:hover{
+    @media all and (min-width:768px)
+    {.card:hover{
         z-index: 9;
         .card-front{
             z-index: 9;
@@ -103,6 +111,7 @@
             z-index: 9;
             transform: rotateY(0deg);
         }
+    }
     }
 }
 @media(max-width:800px){
@@ -136,6 +145,7 @@
                         {
                             font-size:17px;
                         }
+
                     }
                     .tools-used{
                         text-align:left;
@@ -173,7 +183,46 @@
     
     
 }
-//@media(max-width:768px){} //no flipping!!!
+@media(max-width:768px){
+    .home-content{     
+        .card{
+        
+        .card-front-mobile{
+            z-index: 9;
+            width:90%;
+            flex-basis:100%;
+            height:45vh;
+            border-radius: 15px;
+            width: 90%;
+            padding:2rem;
+            color: white;
+            background-color: black;
+            button{
+                font-family: 'Truculenta', cursive;
+                border-radius: 15%;
+                border:1px solid white;
+                background-color: rgb(15,15,15);
+                color: white;
+                font-size:18px;
+            }
+        }
+        .card-front{
+            .tools-used{
+                button{
+                    display:block;
+                    margin-top:40px;
+                    margin-left:20%;
+                    font-family: 'Truculenta', cursive;
+                    border-radius: 15%;
+                    background-color:rgb(15,15,15);
+                    color:white;
+                    font-size:18px;
+                }
+            }
+        }
+        }
+    }
+}
 
 @media(max-width:780px){
     
