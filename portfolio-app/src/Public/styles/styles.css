@@ -191,12 +191,14 @@
 }
 
 .burger .burger-btn {
-  background-color: #b1f1fc;
-  height: 30px;
-  width: 30px;
+  background-color: black;
+  height: 25px;
+  width: 25px;
   margin-bottom: 3%;
   margin-top: 3%;
   margin-left: 3%;
+  border: 3px solid #b1f1fc;
+  border-radius: 20%;
 }
 
 .burger .burger-nav {
@@ -205,9 +207,10 @@
   z-index: 9;
   top: 10;
   width: 100%;
-  height: 17vh;
+  height: 18vh;
   padding-top: 5px;
   padding-bottom: 10px;
+  padding-left: 2%;
 }
 
 .burger .burger-nav a {
@@ -242,9 +245,6 @@
 }
 
 @media (max-width: 400px) {
-  .burger .burger-nav {
-    height: 14vh;
-  }
   .burger .burger-nav a {
     font-size: 18px;
   }
@@ -431,8 +431,6 @@ footer .links a:hover {
           animation-iteration-count: infinite;
   -webkit-animation-name: icon-bounce;
           animation-name: icon-bounce;
-  -webkit-transform-origin: bottom;
-          transform-origin: bottom;
   -webkit-animation-timing-function: ease;
           animation-timing-function: ease;
 }
@@ -518,7 +516,7 @@ footer .links a:hover {
   width: 90%;
   -ms-flex-preferred-size: 100%;
       flex-basis: 100%;
-  height: 60vh;
+  height: 70vh;
   margin-bottom: 15%;
   margin-left: 5%;
   margin-right: 5%;
@@ -533,7 +531,7 @@ footer .links a:hover {
           box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
   -ms-flex-preferred-size: 100%;
       flex-basis: 100%;
-  height: 60vh;
+  height: 70vh;
   border-radius: 15px;
   -webkit-transition: all 0.8s ease;
   transition: all 0.8s ease;
@@ -558,13 +556,13 @@ footer .links a:hover {
   margin-bottom: 10px;
   background-color: #0f0f0f;
   width: 100%;
-  font-size: 40px;
+  font-size: 30px;
 }
 
 .home-content .card .card-front article p {
   margin-bottom: 20px;
   text-align: center;
-  font-size: 20px;
+  font-size: 18px;
   color: black;
 }
 
@@ -578,7 +576,7 @@ footer .links a:hover {
   color: white;
   margin: auto;
   width: 100%;
-  font-size: 26px;
+  font-size: 20px;
   color: black;
 }
 
@@ -587,7 +585,7 @@ footer .links a:hover {
 }
 
 .home-content .card .card-front .tools-used ul li {
-  font-size: 20px;
+  font-size: 16px;
   list-style-type: style auto;
 }
 
@@ -599,7 +597,7 @@ footer .links a:hover {
   width: 90%;
   -ms-flex-preferred-size: 100%;
       flex-basis: 100%;
-  height: 60vh;
+  height: 70vh;
   border-radius: 15px;
   -webkit-transition: all 0.8s ease;
   transition: all 0.8s ease;
@@ -612,9 +610,10 @@ footer .links a:hover {
   -webkit-transform: rotateY(-180deg);
           transform: rotateY(-180deg);
   background-color: black;
+  background-color: white;
 }
 
-@media all and (min-width: 768px) {
+@media all and (min-width: 769px) {
   .home-content .card:hover {
     z-index: 9;
   }
@@ -631,34 +630,16 @@ footer .links a:hover {
 }
 
 @media (max-width: 800px) {
-  .home-content {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    margin-top: 30px;
-  }
   .home-content .card {
-    margin-bottom: 15%;
-    width: 90%;
-    -ms-flex-preferred-size: 100%;
-        flex-basis: 100%;
-    -ms-flex-wrap: nowrap;
-        flex-wrap: nowrap;
-    height: 40vh;
+    height: 60vh;
   }
   .home-content .card .card-front {
     display: -webkit-inline-box;
     display: -ms-inline-flexbox;
     display: inline-flex;
-    width: 90%;
     -ms-flex-preferred-size: 50%;
         flex-basis: 50%;
-    height: 40vh;
+    height: 60vh;
   }
   .home-content .card .card-front article {
     border-bottom: none;
@@ -666,10 +647,10 @@ footer .links a:hover {
     padding-bottom: 15px;
   }
   .home-content .card .card-front article h2 {
-    font-size: 30px;
+    font-size: 26px;
   }
   .home-content .card .card-front article p {
-    font-size: 17px;
+    font-size: 16px;
   }
   .home-content .card .card-front .tools-used {
     text-align: left;
@@ -680,19 +661,9 @@ footer .links a:hover {
   }
   .home-content .card .card-front .tools-used h2 {
     padding-top: 10px;
-    color: white;
     margin: auto;
     margin-left: 20px;
     width: 100%;
-    font-size: 26px;
-    color: black;
-  }
-  .home-content .card .card-front .tools-used ul {
-    color: black;
-  }
-  .home-content .card .card-front .tools-used ul li {
-    font-size: 17px;
-    list-style: inside;
   }
   .home-content .card .card-back {
     -webkit-box-pack: center;
@@ -704,22 +675,20 @@ footer .links a:hover {
     width: 90%;
     -ms-flex-preferred-size: 100%;
         flex-basis: 100%;
-    height: 40vh;
+    height: 60vh;
   }
 }
 
 @media (max-width: 768px) {
+  .home-content .card {
+    margin-bottom: 100px;
+  }
   .home-content .card .card-front-mobile {
     z-index: 9;
-    width: 90%;
     -ms-flex-preferred-size: 100%;
         flex-basis: 100%;
-    height: 45vh;
     border-radius: 15px;
-    width: 90%;
-    padding: 2rem;
-    color: white;
-    background-color: black;
+    padding: 5px;
   }
   .home-content .card .card-front-mobile button {
     font-family: 'Truculenta', cursive;
@@ -741,62 +710,39 @@ footer .links a:hover {
   }
 }
 
-@media (max-width: 780px) {
-  .home-content {
-    padding-top: 10%;
-  }
-  .home-content .card {
-    height: 45vh;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    padding-bottom: 20px;
-  }
-  .home-content .card .card-front {
-    height: 45vh;
-    width: 70%;
-  }
-  .home-content .card .card-back {
-    height: 45vh;
-    width: 70%;
-  }
-}
-
-@media (max-width: 630px) {
-  .home-content .card {
-    height: 50vh;
-  }
-  .home-content .card .card-front {
-    height: 50vh;
-  }
-  .home-content .card .card-back {
-    height: 50vh;
-  }
-}
-
-@media (max-width: 555px) {
+@media (max-width: 450px) {
   .home-content .card .card-front article h2 {
-    font-size: 28px;
+    font-size: 20px;
   }
   .home-content .card .card-front article p {
     font-size: 14px;
   }
   .home-content .card .card-front .tools-used h2 {
-    font-size: 22px;
-    color: black;
-  }
-  .home-content .card .card-front .tools-used ul {
-    color: black;
+    font-size: 18px;
   }
   .home-content .card .card-front .tools-used ul li {
     font-size: 14px;
-    list-style-type: style auto;
+  }
+  .home-content .card .card-front .tools-used button {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 375px) {
+  .home-content .card .card-front article h2 {
+    font-size: 18px;
+  }
+  .home-content .card .card-front article p {
+    font-size: 12px;
+  }
+  .home-content .card .card-front .tools-used h2 {
+    font-size: 16px;
+  }
+  .home-content .card .card-front .tools-used ul li {
+    font-size: 12px;
+  }
+  .home-content .card .card-front .tools-used button {
+    font-size: 12px;
   }
 }
 
@@ -868,9 +814,38 @@ footer .links a:hover {
 }
 
 @media (max-width: 695px) {
+  .about-content article {
+    width: 75%;
+  }
+  .about-content article p {
+    font-size: 20px;
+  }
   .about-content img {
     width: 150px;
     height: 150px;
+  }
+}
+
+@media (max-width: 425px) {
+  .about-content article {
+    width: 70%;
+  }
+  .about-content article p {
+    font-size: 18px;
+  }
+  .about-content img {
+    width: 120px;
+    height: 120px;
+  }
+}
+
+@media (max-width: 375px) {
+  .about-content article p {
+    font-size: 16px;
+  }
+  .about-content img {
+    width: 110px;
+    height: 110px;
   }
 }
 
@@ -932,11 +907,18 @@ footer .links a:hover {
   display: -webkit-inline-box;
   display: -ms-inline-flexbox;
   display: inline-flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.project-one-carosel .Card a {
+  -ms-flex-preferred-size: 100%;
+      flex-basis: 100%;
 }
 
 .project-one-carosel .Card .carousel-root {
   border: 2px solid white;
-  height: 60vh;
+  height: 70vh;
   width: 100%;
 }
 
@@ -946,7 +928,7 @@ footer .links a:hover {
 }
 
 .project-one-carosel .Card .carousel-root .carousel-slider {
-  height: 60vh;
+  height: 70vh;
   display: inline-block;
 }
 
@@ -978,7 +960,7 @@ footer .links a:hover {
 }
 
 .project-one-carosel .Card .carousel-root .carousel-slider .slider-wrapper .slider .selected div figure {
-  height: 60vh;
+  height: 100vh;
   width: 100%;
 }
 
@@ -990,114 +972,12 @@ footer .links a:hover {
 }
 
 @media (max-width: 800px) {
-  .project-one-carosel {
-    font-family: 'Truculenta', sans-serif;
-    height: 100%;
-  }
   .project-one-carosel .Card .carousel-root {
-    height: 40vh;
+    height: 60vh;
     width: 100%;
-  }
-  .project-one-carosel .Card .carousel-root .carousel {
-    display: none;
-    height: 100%;
   }
   .project-one-carosel .Card .carousel-root .carousel-slider {
-    height: 40vh;
-    display: inline-block;
-  }
-  .project-one-carosel .Card .carousel-root .carousel-slider .carousel-status {
-    display: none;
-  }
-  .project-one-carosel .Card .carousel-root .carousel-slider .slider-wrapper {
-    height: 100%;
-    width: 100%;
-  }
-  .project-one-carosel .Card .carousel-root .carousel-slider .slider-wrapper .slider {
-    width: 100%;
-  }
-  .project-one-carosel .Card .carousel-root .carousel-slider .slider-wrapper .slider .slide {
-    height: 100px;
-  }
-  .project-one-carosel .Card .carousel-root .carousel-slider .slider-wrapper .slider .selected {
-    width: 100%;
-    height: 100%;
-  }
-  .project-one-carosel .Card .carousel-root .carousel-slider .slider-wrapper .slider .selected div {
-    height: 100%;
-    width: 100%;
-  }
-  .project-one-carosel .Card .carousel-root .carousel-slider .slider-wrapper .slider .selected div figure {
-    height: 40vh;
-    width: 100%;
-  }
-  .project-one-carosel .Card .carousel-root .carousel-slider .slider-wrapper .slider .selected div figure img {
-    width: 100%;
-    height: 100%;
-    -o-object-fit: cover;
-       object-fit: cover;
-  }
-}
-
-@media (max-width: 780px) {
-  .project-one-carosel .Card .carousel-root {
-    height: 45vh;
-  }
-  .project-one-carosel .Card .carousel-root .carousel-slider {
-    height: 45vh;
-  }
-  .project-one-carosel .Card .carousel-root .selected div figure {
-    height: 45vh;
-  }
-}
-
-@media (max-width: 630px) {
-  .project-one-carosel {
-    font-family: 'Truculenta', sans-serif;
-    height: 100%;
-  }
-  .project-one-carosel .Card .carousel-root {
-    height: 50vh;
-    width: 100%;
-  }
-  .project-one-carosel .Card .carousel-root .carousel {
-    display: none;
-    height: 100%;
-  }
-  .project-one-carosel .Card .carousel-root .carousel-slider {
-    height: 50vh;
-    display: inline-block;
-  }
-  .project-one-carosel .Card .carousel-root .carousel-slider .carousel-status {
-    display: none;
-  }
-  .project-one-carosel .Card .carousel-root .carousel-slider .slider-wrapper {
-    height: 100%;
-    width: 100%;
-  }
-  .project-one-carosel .Card .carousel-root .carousel-slider .slider-wrapper .slider {
-    width: 100%;
-  }
-  .project-one-carosel .Card .carousel-root .carousel-slider .slider-wrapper .slider .slide {
-    height: 100px;
-  }
-  .project-one-carosel .Card .carousel-root .carousel-slider .slider-wrapper .slider .selected {
-    width: 100%;
-    height: 100%;
-  }
-  .project-one-carosel .Card .carousel-root .carousel-slider .slider-wrapper .slider .selected div {
-    height: 100%;
-    width: 100%;
-  }
-  .project-one-carosel .Card .carousel-root .carousel-slider .slider-wrapper .slider .selected div figure {
-    height: 50vh;
-    width: 100%;
-  }
-  .project-one-carosel .Card .carousel-root .carousel-slider .slider-wrapper .slider .selected div figure img {
-    width: 100%;
-    height: 100%;
-    -o-object-fit: cover;
-       object-fit: cover;
+    height: 60vh;
   }
 }
 
@@ -1110,11 +990,18 @@ footer .links a:hover {
   display: -webkit-inline-box;
   display: -ms-inline-flexbox;
   display: inline-flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.project-two-carosel .Card a {
+  -ms-flex-preferred-size: 100%;
+      flex-basis: 100%;
 }
 
 .project-two-carosel .Card .carousel-root {
   border: 2px solid white;
-  height: 60vh;
+  height: 70vh;
   width: 100%;
 }
 
@@ -1124,7 +1011,7 @@ footer .links a:hover {
 }
 
 .project-two-carosel .Card .carousel-root .carousel-slider {
-  height: 60vh;
+  height: 70vh;
   display: inline-block;
 }
 
@@ -1169,116 +1056,12 @@ footer .links a:hover {
 }
 
 @media (max-width: 800px) {
-  .project-two-carosel {
-    font-family: 'Truculenta', sans-serif;
-    height: 100%;
-  }
   .project-two-carosel .Card .carousel-root {
-    height: 40vh;
+    height: 60vh;
     width: 100%;
-  }
-  .project-two-carosel .Card .carousel-root .carousel {
-    display: none;
-    height: 100%;
   }
   .project-two-carosel .Card .carousel-root .carousel-slider {
-    height: 40vh;
-    display: inline-block;
-  }
-  .project-two-carosel .Card .carousel-root .carousel-slider .carousel-status {
-    display: none;
-  }
-  .project-two-carosel .Card .carousel-root .carousel-slider .slider-wrapper {
-    height: 100%;
-    width: 100%;
-  }
-  .project-two-carosel .Card .carousel-root .carousel-slider .slider-wrapper .slider {
-    width: 100%;
-  }
-  .project-two-carosel .Card .carousel-root .carousel-slider .slider-wrapper .slider .slide {
-    height: 200px;
-  }
-  .project-two-carosel .Card .carousel-root .carousel-slider .slider-wrapper .slider .selected {
-    width: 100%;
-    height: 100%;
-  }
-  .project-two-carosel .Card .carousel-root .carousel-slider .slider-wrapper .slider .selected div {
-    height: 100%;
-    width: 100%;
-  }
-  .project-two-carosel .Card .carousel-root .carousel-slider .slider-wrapper .slider .selected div figure {
-    height: 40vh;
-    margin: 0%;
-    width: 100%;
-  }
-  .project-two-carosel .Card .carousel-root .carousel-slider .slider-wrapper .slider .selected div figure img {
-    width: 100%;
-    height: 100%;
-    -o-object-fit: cover;
-       object-fit: cover;
-  }
-}
-
-@media (max-width: 780px) {
-  .project-two-carosel .Card .carousel-root {
-    height: 45vh;
-  }
-  .project-two-carosel .Card .carousel-root .carousel-slider {
-    height: 45vh;
-  }
-  .project-two-carosel .Card .carousel-root .selected div figure {
-    height: 45vh;
-  }
-}
-
-@media (max-width: 630px) {
-  .project-two-carosel {
-    font-family: 'Truculenta', sans-serif;
-    height: 100%;
-  }
-  .project-two-carosel .Card .carousel-root {
-    height: 50vh;
-    width: 100%;
-  }
-  .project-two-carosel .Card .carousel-root .carousel {
-    display: none;
-    height: 100%;
-  }
-  .project-two-carosel .Card .carousel-root .carousel-slider {
-    height: 50vh;
-    display: inline-block;
-  }
-  .project-two-carosel .Card .carousel-root .carousel-slider .carousel-status {
-    display: none;
-  }
-  .project-two-carosel .Card .carousel-root .carousel-slider .slider-wrapper {
-    height: 100%;
-    width: 100%;
-  }
-  .project-two-carosel .Card .carousel-root .carousel-slider .slider-wrapper .slider {
-    width: 100%;
-  }
-  .project-two-carosel .Card .carousel-root .carousel-slider .slider-wrapper .slider .slide {
-    height: 200px;
-  }
-  .project-two-carosel .Card .carousel-root .carousel-slider .slider-wrapper .slider .selected {
-    width: 100%;
-    height: 100%;
-  }
-  .project-two-carosel .Card .carousel-root .carousel-slider .slider-wrapper .slider .selected div {
-    height: 100%;
-    width: 100%;
-  }
-  .project-two-carosel .Card .carousel-root .carousel-slider .slider-wrapper .slider .selected div figure {
-    height: 50vh;
-    margin: 0%;
-    width: 100%;
-  }
-  .project-two-carosel .Card .carousel-root .carousel-slider .slider-wrapper .slider .selected div figure img {
-    width: 100%;
-    height: 100%;
-    -o-object-fit: cover;
-       object-fit: cover;
+    height: 60vh;
   }
 }
 
@@ -1291,11 +1074,18 @@ footer .links a:hover {
   display: -webkit-inline-box;
   display: -ms-inline-flexbox;
   display: inline-flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.project-three-carosel .Card a {
+  -ms-flex-preferred-size: 100%;
+      flex-basis: 100%;
 }
 
 .project-three-carosel .Card .carousel-root {
   border: 2px solid white;
-  height: 60vh;
+  height: 70vh;
   width: 100%;
 }
 
@@ -1306,7 +1096,7 @@ footer .links a:hover {
 
 .project-three-carosel .Card .carousel-root .carousel-slider {
   display: inline-block;
-  height: 60vh;
+  height: 70vh;
 }
 
 .project-three-carosel .Card .carousel-root .carousel-slider .carousel-status {
@@ -1337,7 +1127,7 @@ footer .links a:hover {
 }
 
 .project-three-carosel .Card .carousel-root .carousel-slider .slider-wrapper .slider .selected div figure {
-  height: 70vh;
+  height: 100vh;
   margin: 0%;
   width: 100%;
 }
@@ -1349,141 +1139,13 @@ footer .links a:hover {
      object-fit: cover;
 }
 
-.project-three-carosel .Card .tools-used {
-  margin-left: 2%;
-  width: 30%;
-}
-
-.project-three-carosel .Card .tools-used h2 {
-  padding-left: 2%;
-  font-size: 32px;
-  color: black;
-  background-color: #b1f1fc;
-  width: 100%;
-  height: 50px;
-}
-
-.project-three-carosel .Card .tools-used ul {
-  color: white;
-  padding-top: 5%;
-}
-
-.project-three-carosel .Card .tools-used ul li {
-  font-size: 28px;
-  list-style: disc;
-}
-
 @media (max-width: 800px) {
-  .project-three-carosel {
-    font-family: 'Truculenta', sans-serif;
-    height: 100%;
-  }
   .project-three-carosel .Card .carousel-root {
-    height: 40vh;
+    height: 60vh;
     width: 100%;
-  }
-  .project-three-carosel .Card .carousel-root .carousel {
-    display: none;
-    height: 100%;
   }
   .project-three-carosel .Card .carousel-root .carousel-slider {
-    display: inline-block;
-    height: 40vh;
-  }
-  .project-three-carosel .Card .carousel-root .carousel-slider .carousel-status {
-    display: none;
-  }
-  .project-three-carosel .Card .carousel-root .carousel-slider .slider-wrapper {
-    height: 100%;
-    width: 100%;
-  }
-  .project-three-carosel .Card .carousel-root .carousel-slider .slider-wrapper .slider {
-    width: 100%;
-  }
-  .project-three-carosel .Card .carousel-root .carousel-slider .slider-wrapper .slider .slide {
-    height: 200px;
-  }
-  .project-three-carosel .Card .carousel-root .carousel-slider .slider-wrapper .slider .selected {
-    width: 100%;
-    height: 100%;
-  }
-  .project-three-carosel .Card .carousel-root .carousel-slider .slider-wrapper .slider .selected div {
-    height: 100%;
-    width: 100%;
-  }
-  .project-three-carosel .Card .carousel-root .carousel-slider .slider-wrapper .slider .selected div figure {
-    height: 40vh;
-    margin: 0%;
-    width: 100%;
-  }
-  .project-three-carosel .Card .carousel-root .carousel-slider .slider-wrapper .slider .selected div figure img {
-    width: 100%;
-    height: 100%;
-    -o-object-fit: cover;
-       object-fit: cover;
-  }
-}
-
-@media (max-width: 780px) {
-  .project-three-carosel .Card .carousel-root {
-    height: 45vh;
-  }
-  .project-three-carosel .Card .carousel-root .carousel-slider {
-    height: 45vh;
-  }
-  .project-three-carosel .Card .carousel-root .selected div figure {
-    height: 45vh;
-  }
-}
-
-@media (max-width: 630px) {
-  .project-three-carosel {
-    font-family: 'Truculenta', sans-serif;
-    height: 100%;
-  }
-  .project-three-carosel .Card .carousel-root {
-    height: 50vh;
-    width: 100%;
-  }
-  .project-three-carosel .Card .carousel-root .carousel {
-    display: none;
-    height: 100%;
-  }
-  .project-three-carosel .Card .carousel-root .carousel-slider {
-    height: 50vh;
-    display: inline-block;
-  }
-  .project-three-carosel .Card .carousel-root .carousel-slider .carousel-status {
-    display: none;
-  }
-  .project-three-carosel .Card .carousel-root .carousel-slider .slider-wrapper {
-    height: 100%;
-    width: 100%;
-  }
-  .project-three-carosel .Card .carousel-root .carousel-slider .slider-wrapper .slider {
-    width: 100%;
-  }
-  .project-three-carosel .Card .carousel-root .carousel-slider .slider-wrapper .slider .slide {
-    height: 200px;
-  }
-  .project-three-carosel .Card .carousel-root .carousel-slider .slider-wrapper .slider .selected {
-    width: 100%;
-    height: 100%;
-  }
-  .project-three-carosel .Card .carousel-root .carousel-slider .slider-wrapper .slider .selected div {
-    height: 100%;
-    width: 100%;
-  }
-  .project-three-carosel .Card .carousel-root .carousel-slider .slider-wrapper .slider .selected div figure {
-    height: 50vh;
-    margin: 0%;
-    width: 100%;
-  }
-  .project-three-carosel .Card .carousel-root .carousel-slider .slider-wrapper .slider .selected div figure img {
-    width: 100%;
-    height: 100%;
-    -o-object-fit: cover;
-       object-fit: cover;
+    height: 60vh;
   }
 }
 

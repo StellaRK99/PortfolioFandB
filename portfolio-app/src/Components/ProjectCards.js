@@ -32,7 +32,7 @@ function ProjectCards() {
             <p>RuneDen is a centralized hub for gamers to download texture packs or seeds for their Minecraft worlds.
             This app was built using ReactJS for the frontend and utilizes a plethora of Amazon Web Services, such as Cognito User Pools,
             Lambda functions & layers, S3 Buckets, API Gateway, Amazon's own DynamoDB and more.</p>
-            <a href="#">Live Link</a>
+      
             
         </article>
         
@@ -74,7 +74,7 @@ function ProjectCards() {
             was built using ReactJS for the frontend, NodeJS for the backend and uses MySql as the database.
             The design of this application aims to serve a very clean, simple interface that is easy and straightforward
             to navigate through.</p>
-            <a href="#">Live Link</a>
+
             
         </article>   
         
@@ -111,7 +111,7 @@ function ProjectCards() {
             <h2>Dummy Inc</h2>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. At expedita vel, ex nihil praesentium impedit, nemo molestias veniam 
                 tenetur numquam porro natus alias voluptate dolor doloribus deleniti qui? Impedit, adipisci!</p>
-                <a href="#">Live Link</a>
+          
                
         </article>  
         

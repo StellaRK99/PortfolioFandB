@@ -12,9 +12,9 @@ function ProjectOneCarosel() {
   return (
       
     <div className='project-one-carosel'>
-
+  
         <div className="Card">
-    
+
         
             <Carousel>
             <div>
@@ -44,6 +44,8 @@ function ProjectOneCarosel() {
             </div>
         
             </Carousel>
+
+            <a href="#">Live Link</a>
 
        
             </div>
