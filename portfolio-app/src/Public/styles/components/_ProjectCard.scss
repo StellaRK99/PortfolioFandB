@@ -31,18 +31,45 @@
             color: white;
             background-color:white;
             article{
-            
+                margin-bottom:5px;
+                
+                border-bottom: 1px solid rgb(15,15,15);
+                
+
                 h2{
-                    margin-bottom:20px;
+                    padding-left:5px;
+                    color:white;
+                    margin:auto;
+                    margin-bottom:10px;
+                   background-color: rgb(15,15,15);
+                    width:100%;
                     font-size:40px;
-                    margin-top:30px;
-                    text-align: center;
-                    color:black;
                 }
                 p{
+                    margin-bottom:20px;
                     text-align: center;
                     font-size:20px;
                     color:black;
+                }
+            }
+            .tools-used{
+                width:100%;
+                h2{ 
+                    padding-top:10px;
+                    padding-left:5px;
+                    color:white;
+                    margin:auto;
+                    width:100%;
+                    font-size:26px;
+                    color:black;
+                }
+                ul{
+                    color:black;
+                   
+                    li{
+                        font-size:20px;
+                        list-style-type: style auto;;
+                    }
                 }
             }
            
@@ -61,7 +88,7 @@
             color: white;
             transform: rotateY(-180deg);
             background-color: black;
-           // background-color: pink;
+           
          
         }
     
@@ -87,24 +114,50 @@
             .card{
                 margin-bottom:15%;
                 width:90%;
+                
                 flex-basis:100%;
+                flex-wrap:nowrap;
                 height:40vh;
                 .card-front{
-                    justify-content: center;
-                    align-items:center;
+                    display:inline-flex;
+              
                     width:90%;
-                    flex-basis:100%;
+                    flex-basis:50%;
                     height:40vh;
                     article{
-                        text-align:center;
+                        border-bottom:none;
+                       
+                        width:50%;
                         padding-bottom:15px;
                         h2{
-                            margin-bottom:20px;
-                            display:inline-flex;
+                            font-size:30px;
                         }
                         p
                         {
-
+                            font-size:17px;
+                        }
+                    }
+                    .tools-used{
+                        text-align:left;
+                        margin-left:2%;
+                        flex-basis:50%;
+                        width:40%;
+                        h2{ 
+                            padding-top:10px;
+                            color:white;
+                            margin:auto;
+                            margin-left:20px;
+                            width:100%;
+                            font-size:26px;
+                            color:black;
+                        }
+                        ul{
+                            color:black;
+                           
+                            li{
+                                font-size:17px;
+                                list-style:inside;
+                            }
                         }
                     }
                 }
@@ -120,23 +173,25 @@
     
     
 }
+//@media(max-width:768px){} //no flipping!!!
 
 @media(max-width:780px){
     
     .home-content{
         padding-top:10%;
         .card{
+            height:45vh;
             display:flex;
             justify-content:center;
             align-items: center;
             padding-bottom:20px;
             .card-front{
             
-         
+                height:45vh;
                 width:70%;
             }
             .card-back{
-        
+                height:45vh;
                 width:70% ;
          
 
@@ -163,19 +218,43 @@
         }
     
 }
-// @media(max-width:545px){
+@media(max-width:555px){
    
-//     .home-content{
-//         .card{
-//             height:20vh;
-//             .card-front{
-//                height:20vh;
-//             }
-//             .card-back{
-//                 height:20vh;
+    .home-content{
+        .card{
+            //height:20vh;
+            .card-front{
+               //height:20vh;
+               article{
+                   h2{
+                       font-size:28px;
+                   }
+                   p{
+                       font-size:14px;
+                   }
+               } 
+               .tools-used{
+                
+                h2{ 
+                
+                    font-size:22px;
+                    color:black;
+                }
+                ul{
+                    color:black;
+                   
+                    li{
+                        font-size:14px;
+                        list-style-type: style auto;;
+                    }
+                }
+            }
+            }
+            .card-back{
+                //height:20vh;
 
-//             }
-//         }
-//     }
+            }
+        }
+    }
 
-// }
+}

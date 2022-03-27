@@ -6,7 +6,7 @@
         .carousel-root{
             border:2px solid white;
             height: 60vh;
-            width: 70%;
+            width: 100%;
                 .carousel{
                     display: none;
                     height: 100%;
@@ -122,6 +122,29 @@
     }
     
 }
+@media(max-width:780px){
+    .project-three-carosel{
+        .Card{
+            .carousel-root{
+                height: 45vh;
+                .carousel-slider{
+                    height: 45vh;
+                }
+                .selected{
+                   
+                    div{
+                    
+                    figure{
+                    height: 45vh;
+                  
+                    }
+                    }
+                }
+            }
+        }
+    }
+}
+
 @media(max-width:630px){
     .project-three-carosel{
         font-family: 'Truculenta', sans-serif;

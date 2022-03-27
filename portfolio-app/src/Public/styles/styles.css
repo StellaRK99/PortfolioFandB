@@ -145,6 +145,10 @@
   font-style: italic;
 }
 
+.banner span {
+  display: none;
+}
+
 .banner a {
   color: white;
   text-decoration: none;
@@ -541,18 +545,49 @@ footer .links a:hover {
   background-color: white;
 }
 
+.home-content .card .card-front article {
+  margin-bottom: 5px;
+  border-bottom: 1px solid #0f0f0f;
+}
+
 .home-content .card .card-front article h2 {
-  margin-bottom: 20px;
+  padding-left: 5px;
+  color: white;
+  margin: auto;
+  margin-bottom: 10px;
+  background-color: #0f0f0f;
+  width: 100%;
   font-size: 40px;
-  margin-top: 30px;
-  text-align: center;
-  color: black;
 }
 
 .home-content .card .card-front article p {
+  margin-bottom: 20px;
   text-align: center;
   font-size: 20px;
   color: black;
+}
+
+.home-content .card .card-front .tools-used {
+  width: 100%;
+}
+
+.home-content .card .card-front .tools-used h2 {
+  padding-top: 10px;
+  padding-left: 5px;
+  color: white;
+  margin: auto;
+  width: 100%;
+  font-size: 26px;
+  color: black;
+}
+
+.home-content .card .card-front .tools-used ul {
+  color: black;
+}
+
+.home-content .card .card-front .tools-used ul li {
+  font-size: 20px;
+  list-style-type: style auto;
 }
 
 .home-content .card .card-back {
@@ -609,29 +644,52 @@ footer .links a:hover {
     width: 90%;
     -ms-flex-preferred-size: 100%;
         flex-basis: 100%;
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
     height: 40vh;
   }
   .home-content .card .card-front {
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    width: 90%;
-    -ms-flex-preferred-size: 100%;
-        flex-basis: 100%;
-    height: 40vh;
-  }
-  .home-content .card .card-front article {
-    text-align: center;
-    padding-bottom: 15px;
-  }
-  .home-content .card .card-front article h2 {
-    margin-bottom: 20px;
     display: -webkit-inline-box;
     display: -ms-inline-flexbox;
     display: inline-flex;
+    width: 90%;
+    -ms-flex-preferred-size: 50%;
+        flex-basis: 50%;
+    height: 40vh;
+  }
+  .home-content .card .card-front article {
+    border-bottom: none;
+    width: 50%;
+    padding-bottom: 15px;
+  }
+  .home-content .card .card-front article h2 {
+    font-size: 30px;
+  }
+  .home-content .card .card-front article p {
+    font-size: 17px;
+  }
+  .home-content .card .card-front .tools-used {
+    text-align: left;
+    margin-left: 2%;
+    -ms-flex-preferred-size: 50%;
+        flex-basis: 50%;
+    width: 40%;
+  }
+  .home-content .card .card-front .tools-used h2 {
+    padding-top: 10px;
+    color: white;
+    margin: auto;
+    margin-left: 20px;
+    width: 100%;
+    font-size: 26px;
+    color: black;
+  }
+  .home-content .card .card-front .tools-used ul {
+    color: black;
+  }
+  .home-content .card .card-front .tools-used ul li {
+    font-size: 17px;
+    list-style: inside;
   }
   .home-content .card .card-back {
     -webkit-box-pack: center;
@@ -652,6 +710,7 @@ footer .links a:hover {
     padding-top: 10%;
   }
   .home-content .card {
+    height: 45vh;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -664,9 +723,11 @@ footer .links a:hover {
     padding-bottom: 20px;
   }
   .home-content .card .card-front {
+    height: 45vh;
     width: 70%;
   }
   .home-content .card .card-back {
+    height: 45vh;
     width: 70%;
   }
 }
@@ -680,6 +741,26 @@ footer .links a:hover {
   }
   .home-content .card .card-back {
     height: 50vh;
+  }
+}
+
+@media (max-width: 555px) {
+  .home-content .card .card-front article h2 {
+    font-size: 28px;
+  }
+  .home-content .card .card-front article p {
+    font-size: 14px;
+  }
+  .home-content .card .card-front .tools-used h2 {
+    font-size: 22px;
+    color: black;
+  }
+  .home-content .card .card-front .tools-used ul {
+    color: black;
+  }
+  .home-content .card .card-front .tools-used ul li {
+    font-size: 14px;
+    list-style-type: style auto;
   }
 }
 
@@ -820,7 +901,7 @@ footer .links a:hover {
 .project-one-carosel .Card .carousel-root {
   border: 2px solid white;
   height: 60vh;
-  width: 70%;
+  width: 100%;
 }
 
 .project-one-carosel .Card .carousel-root .carousel {
@@ -872,30 +953,6 @@ footer .links a:hover {
      object-fit: cover;
 }
 
-.project-one-carosel .Card .tools-used {
-  margin-left: 2%;
-  width: 30%;
-}
-
-.project-one-carosel .Card .tools-used h2 {
-  padding-left: 2%;
-  font-size: 32px;
-  color: black;
-  background-color: #b1f1fc;
-  width: 100%;
-  height: 50px;
-}
-
-.project-one-carosel .Card .tools-used ul {
-  color: white;
-  padding-top: 5%;
-}
-
-.project-one-carosel .Card .tools-used ul li {
-  font-size: 28px;
-  list-style: disc;
-}
-
 @media (max-width: 800px) {
   .project-one-carosel {
     font-family: 'Truculenta', sans-serif;
@@ -943,6 +1000,18 @@ footer .links a:hover {
     height: 100%;
     -o-object-fit: cover;
        object-fit: cover;
+  }
+}
+
+@media (max-width: 780px) {
+  .project-one-carosel .Card .carousel-root {
+    height: 45vh;
+  }
+  .project-one-carosel .Card .carousel-root .carousel-slider {
+    height: 45vh;
+  }
+  .project-one-carosel .Card .carousel-root .selected div figure {
+    height: 45vh;
   }
 }
 
@@ -1010,7 +1079,7 @@ footer .links a:hover {
 .project-two-carosel .Card .carousel-root {
   border: 2px solid white;
   height: 60vh;
-  width: 70%;
+  width: 100%;
 }
 
 .project-two-carosel .Card .carousel-root .carousel {
@@ -1051,7 +1120,7 @@ footer .links a:hover {
 }
 
 .project-two-carosel .Card .carousel-root .carousel-slider .slider-wrapper .slider .selected div figure {
-  height: 70vh;
+  height: 100vh;
   margin: 0%;
   width: 100%;
 }
@@ -1061,30 +1130,6 @@ footer .links a:hover {
   height: 100%;
   -o-object-fit: cover;
      object-fit: cover;
-}
-
-.project-two-carosel .Card .tools-used {
-  margin-left: 2%;
-  width: 30%;
-}
-
-.project-two-carosel .Card .tools-used h2 {
-  padding-left: 2%;
-  font-size: 32px;
-  color: black;
-  background-color: #b1f1fc;
-  width: 100%;
-  height: 50px;
-}
-
-.project-two-carosel .Card .tools-used ul {
-  color: white;
-  padding-top: 5%;
-}
-
-.project-two-carosel .Card .tools-used ul li {
-  font-size: 28px;
-  list-style: disc;
 }
 
 @media (max-width: 800px) {
@@ -1135,6 +1180,18 @@ footer .links a:hover {
     height: 100%;
     -o-object-fit: cover;
        object-fit: cover;
+  }
+}
+
+@media (max-width: 780px) {
+  .project-two-carosel .Card .carousel-root {
+    height: 45vh;
+  }
+  .project-two-carosel .Card .carousel-root .carousel-slider {
+    height: 45vh;
+  }
+  .project-two-carosel .Card .carousel-root .selected div figure {
+    height: 45vh;
   }
 }
 
@@ -1203,7 +1260,7 @@ footer .links a:hover {
 .project-three-carosel .Card .carousel-root {
   border: 2px solid white;
   height: 60vh;
-  width: 70%;
+  width: 100%;
 }
 
 .project-three-carosel .Card .carousel-root .carousel {
@@ -1331,6 +1388,18 @@ footer .links a:hover {
   }
 }
 
+@media (max-width: 780px) {
+  .project-three-carosel .Card .carousel-root {
+    height: 45vh;
+  }
+  .project-three-carosel .Card .carousel-root .carousel-slider {
+    height: 45vh;
+  }
+  .project-three-carosel .Card .carousel-root .selected div figure {
+    height: 45vh;
+  }
+}
+
 @media (max-width: 630px) {
   .project-three-carosel {
     font-family: 'Truculenta', sans-serif;
@@ -1396,7 +1465,7 @@ footer .links a:hover {
   left: 15px;
   position: absolute;
   width: 20px;
-  border: 4px solid #fff;
+  border: 2.5px solid black;
   border-radius: 15px;
   -webkit-transform: rotate(45deg);
           transform: rotate(45deg);
@@ -1405,7 +1474,7 @@ footer .links a:hover {
 .arrow-line2 {
   position: absolute;
   width: 20px;
-  border: 4px solid #fff;
+  border: 2.5px solid black;
   border-radius: 15px;
   -webkit-transform: rotate(-45deg);
           transform: rotate(-45deg);
