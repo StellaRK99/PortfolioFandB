@@ -38,7 +38,18 @@ function ProjectTwoCarosel() {
             </div>
         
             </Carousel>
-       
+            <div className="tools-used">
+                <h2>Tools Used</h2>
+                <div className="line"></div>
+                <ul>
+                    <li>ReactJS</li>
+                    <li>Amplify</li>
+                    <li>NodeJs</li>
+                    <li>DynamoDB</li>
+                    <li>Lambda</li>
+                    <li>S3 Bucket</li>
+                </ul>
+            </div>
             </div>
      
         </div>

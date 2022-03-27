@@ -35,14 +35,14 @@
             height: 3px;
             left: 50%;
             position: absolute;
-            background: #62f0e4;
-            transition: width 0.3s ease 0s, left .5s ease 0s;
+            background: #b1f1fc;
+            transition: width 0.3s ease 0s, left .6s ease 0s;
             width: 0;
         }
 
         a:hover{
             border-bottom:2px solid white;
-            color:#62f0e4;
+            color:#b1f1fc;
  
         }
         a:hover:after{

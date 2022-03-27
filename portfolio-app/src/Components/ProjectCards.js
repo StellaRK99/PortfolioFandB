@@ -1,9 +1,9 @@
 import React from 'react'
-import { Link } from "react-router-dom";
-import A1 from '../Public/Images/ararat1.PNG';
 import ProjectOneCarosel from '../Components/ProjectOneCarosel';
+import ProjectTwoCarosel from '../Components/ProjectTwoCarosel';
+import ProjectThreeCarosel from './ProjectThreeCarosel';
 import '../Public/styles/styles.css';
-import ProjectTwoCarosel from './ProjectTwoCarosel';
+
 function ProjectCards() {
   return (
     <div className="home-content">
@@ -15,7 +15,7 @@ function ProjectCards() {
             <p>RuneDen is a centralized hub for gamers to download texture packs or seeds for their Minecraft worlds.
             This app was built using ReactJS for the frontend and utilizes a plethora of Amazon Web Services, such as Cognito User Pools,
             Lambda functions & layers, S3 Buckets, API Gateway, Amazon's own DynamoDB and more. These tools were primarily configured through 
-            the Amplify Framework's CLI. Click me for more details!</p>
+            the Amplify Framework's CLI.</p>
         </article>
         
         </div>
@@ -32,7 +32,7 @@ function ProjectCards() {
             <p>AraratAuto is a local small business in Burnaby, BC that sells vehicles. This application
             was built using ReactJS for the frontend, NodeJS for the backend and uses MySql as the database.
             The design of this application aims to serve a very clean, simple interface that is easy and straightforward
-            to navigate through, while also emulating a very "automotive" feel. Click me for more details!</p>
+            to navigate through, while also emulating a very "automotive" feel.</p>
         </article>   
         </div>
         
@@ -51,7 +51,7 @@ function ProjectCards() {
         </div>
 
         <div className="card-back">
-        <ProjectOneCarosel />
+        <ProjectThreeCarosel />
             
         </div>
     </div>

@@ -1,13 +1,15 @@
 .skills{
     display:flex;
+    margin-top:15%;
     justify-content: center;
     align-items: center;
-    margin-top:15%;
-    
       .skills-content{
+          margin-right:3%;
+          margin-left:3%;  
           img{
-              margin-right:25px;
-              margin-left:25px;
+    
+            margin-right:5px;
+            margin-left:5px;
           }
           img:hover{
           animation-duration: 2s;
@@ -26,9 +28,14 @@
       }
   }
 
-  @media(max-width:1096px){
+  @media(max-width:695px){
       .skills{
-        display: flex;
-        justify-content: space-evenly;
+        .skills-content{
+            img{
+                margin-top:5%;
+                justify-content: center;
+                align-items: center;
+            }
+        }
       }
   }

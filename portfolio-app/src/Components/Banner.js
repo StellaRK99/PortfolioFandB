@@ -11,8 +11,8 @@ function Banner() {
       <Typist>
         <h1>Stella Kagri</h1>
         <Typist.Delay ms={900} />
-        <h2>Full Stack Developer Student...</h2>
-        <Typist.Backspace count={11} delay={500} />
+        <h2>Full Stack Developer...</h2>
+        <Typist.Backspace count={3} delay={500} />
       </Typist>
       </Link>   
       <BoucingArrow />

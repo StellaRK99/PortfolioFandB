@@ -20,7 +20,6 @@ function Footer() {
             <div className="links">
                 <h1>Links</h1>
                 <Link to="/">Home</Link>
-                <Link to="/About">About</Link>
                 <Link to="/Contact">Contact</Link>
                 <Link to="/Projects">Projects</Link>
             </div>

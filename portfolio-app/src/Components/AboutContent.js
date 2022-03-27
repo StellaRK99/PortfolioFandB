@@ -9,7 +9,10 @@ function AboutContent() {
     <img src={Me}></img>
     <article>
     <p> 
-            I'm currently a Software Development student at BCIT in the Software Systems Developer program.
+            I enjoy coding in C#, Javascript, Typescript, Node(Express), React, and love developing web applications. Backend development is my preference
+            as I really like working with data and creating a nice foundation for a full-stack app. I also love art and design in general, 
+            so creating an elegant and clean frontend comes naturally to me.
+
             Even though I love coding, I wasn't always so interested in it. Fresh out of highschool I had plans to obtain
             a political science degree at SFU and go on to become a lawyer. 
             
@@ -17,13 +20,11 @@ function AboutContent() {
             I unintentionally got my first taste of coding. Other than doing basic statistics, I used R, a programming language used to compute statistics
             and various types of graphs, and got to dabble in the process of learning a new language, getting used to weird syntax and debugging.
 
-            As an arts student for a couple of years at this point, POL203 was a rude awakening to the extremeley concise, technical and procedural
-            realm of software. Even though it was extremely foreign and frustrating at times, it was addicting, interestingly enough... and I loved it!
-
+            Even though it was extremely foreign and frustrating at times, it was addicting, interestingly enough... and I loved it!
             Fast forward to now, nearly three years later, I'm fully ensconsed in code and I am loving it. I even debug my code in my dreams!
         </p>
     </article> 
-
+    <a href='#'>My Resume</a>
     </div>
 
   )

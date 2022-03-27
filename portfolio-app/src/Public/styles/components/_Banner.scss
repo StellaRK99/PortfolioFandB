@@ -3,11 +3,8 @@
     height:100vh;
     background-color: black;
     box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
-
-    //box-shadow: rgba(49, 100, 240, 0.4) 0px 5px, rgba(50, 91, 240, 0.3) 0px 10px, rgba(46, 114, 240, 0.2) 0px 15px, rgba(46, 162, 240, 0.1) 0px 20px, rgba(46, 211, 240, 0.05) 0px 25px;
     h1{
         background-color: black;
-     
         font-size:80px;
         display:flex;
         justify-content: center;
@@ -62,7 +59,6 @@
 }
 @media(max-width:400px){
     .banner{
-        height:70vh;
         h1{
             font-size:42px;
         }

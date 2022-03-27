@@ -3,7 +3,6 @@
 
 //PAGES
 @import './pages/Contact';
-@import './pages/About';
 @import './pages/Home';
 @import './pages/Projects';
 
@@ -19,7 +18,11 @@
 @import './components/ProjectOneCarosel';
 @import './components/ProjectTwoCarosel';
 @import './components/ProjectThreeCarosel';
+@import './components/BackToTop';
 
 html {
     scroll-behavior: smooth;
+    background-color:#b1f1fc;
+// /* Created with https://www.css-gradient.com *//* Created with https://www.css-gradient.com */
+//background-color: black;
   }

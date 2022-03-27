@@ -1,12 +1,13 @@
 footer{
+    border-top:1px solid white;
     display:flex;
     justify-content: center;
     align-items: center;
     background-color: black;
     height:200px;
     width:100%;
-    font-family: 'Truculenta', sans-serif;
-    //margin-top:10%;
+    font-family: 'Truculenta';
+    margin-top:5%;
     h1{
 
         font-size:30px;
@@ -15,31 +16,32 @@ footer{
     }
     .logos{
        position: absolute;
-       right:5px;
+       right:20px;
       
-    .gitCat{   
-    margin-right:10px;
-    }
-    .l-in{ 
-        img{
-            width:38px;
-            height:30px;
+        .gitCat{   
+        margin-right:10px;
         }
-    }
+        .l-in{ 
+            img{
+                width:38px;
+                height:30px;
+            }
+        }
     }
     .links{
         display:flex;
         flex-wrap:wrap;
-        font-family:  'Truculenta', sans-serif;
+        font-family: 'Truculenta';
         position: absolute;
         width:2%;
-        left:10px;
+        left:20px;
         h1{
+            border-bottom:1px solid white;
             font-size:20px;
             margin-bottom:10px;
         }
         a{
-            font-size:16px;
+            font-size:18px;
             text-decoration: none;
             color:white;
 
@@ -59,6 +61,7 @@ footer{
     footer{
        h1{
         font-size:20px;
+    
 
        }     
        .logos{
@@ -73,10 +76,21 @@ footer{
      }
     }
 }
+
 @media(max-width:350px){
     footer{
         h1{
-            font-size:18px;
+            font-size:16px;
+            margin-right:5%;
         }
+        .links{
+            h1{
+                font-size:18px;
+            }
+            a{
+                font-size:14px;
+            }
+        }
+        
     }
 }
