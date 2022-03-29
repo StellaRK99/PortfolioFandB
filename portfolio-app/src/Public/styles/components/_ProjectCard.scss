@@ -7,15 +7,15 @@
     margin-top:30px;
  
     .card{
+
         display:flex;
         justify-content: center;
         align-items: center;
-        width:90%;
+        width:75%;
         flex-basis:100%;
         height:70vh;
+        margin:auto;
         margin-bottom:15%;
-        margin-left:5%;
-        margin-right:5%;
         perspective: 150rem;
         position: relative;
         .card-front{
@@ -27,14 +27,12 @@
             transition: all 0.8s ease;
             backface-visibility: hidden;
             position: absolute;
-            width: 90%;
             padding:2rem;
             color: white;
             background-color:white;
             article{
-                margin-bottom:5px;
                 border-bottom: 1px solid rgb(15,15,15);
-             
+                padding-bottom: 2px;
                 h2{
                     padding-left:5px;
                     color:white;
@@ -42,12 +40,11 @@
                     margin-bottom:10px;
                    background-color: rgb(15,15,15);
                     width:100%;
-                    font-size:30px;
+                    font-size:35px;
                 }
                 p{
-                    margin-bottom:20px;
                     text-align: center;
-                    font-size:18px;
+                    font-size:20px;
                     color:black;
                 }
                 
@@ -62,14 +59,15 @@
                     color:white;
                     margin:auto;
                     width:100%;
-                    font-size:20px;
+                    font-size:26px;
                     color:black;
                 }
                 ul{
                     color:black;
-                   
+                    
                     li{
-                        font-size:16px;
+                       
+                        font-size:20px;
                         list-style-type: style auto;
                     }
                 }
@@ -83,14 +81,13 @@
            
         }
         .card-back{
-            width:90%;
+            box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
             flex-basis:100%;
             height:70vh;
             border-radius: 15px;
             transition: all 0.8s ease;
             backface-visibility: hidden;
             position: absolute;
-            width: 90%;
             padding:2rem;
             color: white;
             transform: rotateY(-180deg);
@@ -100,8 +97,8 @@
         }
     
     }
-    @media all and (min-width:769px)
-    {.card:hover{
+
+    .card:hover{
         z-index: 9;
         .card-front{
             z-index: 9;
@@ -112,53 +109,68 @@
             transform: rotateY(0deg);
         }
     }
+    
+}
+@media(max-width:1024px){
+    .home-content{
+        .card{
+            .card-front{
+                article{
+                    p{
+                        font-size:16px;
+                    }
+                }.tools-used{
+         
+                    h2{ 
+                        font-size:19px;
+                  
+                    }
+                    ul{
+                     
+                        
+                        li{
+                           
+                            font-size:15px;
+                  
+                        }
+                    }
+                   
+                    
+                    
+                   }
+            }
+        }
     }
 }
 @media(max-width:800px){
         .home-content{
             .card{
-                height:60vh;
                 .card-front{
-                    display:inline-flex;
-              
-                    
-                    flex-basis:50%;
-                    height:60vh;
                     article{
-                        border-bottom:none;
-                       
-                        width:50%;
-                        padding-bottom:15px;
                         h2{
-                            font-size:26px;
+                            font-size:20px;
                         }
                         p
                         {
-                            font-size:16px;
+                            font-size:14px;
                         }
 
                     }
                     .tools-used{
-                        text-align:left;
-                        margin-left:2%;
-                        flex-basis:50%;
-                        width:40%;
+     
                         h2{ 
-                            padding-top:10px;
-                            margin:auto;
-                            margin-left:20px;
-                            width:100%;
+                            font-size:17px;
+                        }
+                        ul{
+                            li{
+                                font-size: 14px;;
+                            }
                         }
 
                     }
                 }
                 .card-back{
-
-                    justify-content: center;
-                    align-items:center;
                     width:90%;
-                    flex-basis:100%;
-                    height:60vh;
                 }
             }
         }
@@ -168,189 +180,119 @@
 @media(max-width:768px){
     .home-content{     
         .card{
-            margin-bottom:100px;
-            
-        .card-front-mobile{
-            z-index: 9;
-            flex-basis:100%;
-            border-radius: 15px;
-            padding:5px;
-            button{
-                font-family: 'Truculenta', cursive;
-                border-radius: 15%;
-                border:1px solid white;
-                background-color: rgb(15,15,15);
-                color: white;
-                font-size:18px;
-            }
-        }
-        .card-front{
-            .tools-used{
-                button{
-                    display:block;
-                    margin-top:40px;
-                    margin-left:20%;
-                    font-family: 'Truculenta', cursive;
-                    border-radius: 15%;
-                    background-color:rgb(15,15,15);
-                    color:white;
-                    font-size:18px;
-                }
-            }
-        }
-        }
-    }
-}
-@media(max-width:450px){
-    .home-content{
-        .card{
             .card-front{
                 article{
-                    h2{
-                       
-                        font-size:20px;
-                    }
                     p{
-                        font-size: 14px;
+                        font-size:13px;
                     }
                 }
                 .tools-used{
-                
+     
                     h2{ 
-                        font-size:18px;
-                        
+                        font-size:15px;
                     }
                     ul{
-                       
                         li{
-                            font-size:14px;
-                            
+                            font-size: 12px;
                         }
                     }
-                    button{
-                        
-                        font-size:14px;
-                    }
+
                 }
             }
         }
     }
 }
-@media(max-width:375px){
+
+@media(max-width:540px){
     .home-content{
         .card{
+            margin-bottom: 100px;
             .card-front{
                 article{
                     h2{
-                       
                         font-size:18px;
                     }
                     p{
-                        font-size: 12px;
-                    }
-                }
-                .tools-used{
-                
-                    h2{ 
-                        font-size:16px;
-                        
-                    }
-                    ul{
-                       
-                        li{
-                            font-size:12px;
-                            
-                        }
-                    }
-                    button{
-                        
                         font-size:12px;
                     }
                 }
+                .tools-used{
+     
+                    h2{ 
+                        font-size:14px;
+                    }
+                    ul{
+                        li{
+                            font-size: 11px;
+                        }
+                    }
+
+                }
             }
         }
-    }   
+    }
 }
-// @media(max-width:780px){
-    
-//     .home-content{
-//         padding-top:10%;
-//         .card{
-//             height:45vh;
-//             display:flex;
-//             justify-content:center;
-//             align-items: center;
-//             padding-bottom:20px;
-//             .card-front{
-            
-//                 height:45vh;
-//                 width:70%;
-//             }
-//             .card-back{
-//                 height:45vh;
-//                 width:70% ;
-         
-
-//             }
-//             }
-//         }
-    
-    
-// }
-
-// @media(max-width:630px){
-   
-//         .home-content{
-//             .card{
-//                 height:50vh;
-//                 .card-front{
-//                    height:50vh;
-//                 }
-//                 .card-back{
-//                     height:50vh;
-
-//                 }
-//             }
-//         }
-    
-// }
-// @media(max-width:555px){
-   
-//     .home-content{
-//         .card{
-//             //height:20vh;
-//             .card-front{
-//                //height:20vh;
-//                article{
-//                    h2{
-//                        font-size:28px;
-//                    }
-//                    p{
-//                        font-size:14px;
-//                    }
-//                } 
-//                .tools-used{
+@media(max-width:460px){
+    .home-content{
+        .card{
+            .card-front{
+                article{
+                    h2{
+                       
+                        font-size:16px;
+                    }
+                    p{
+                        font-size: 10px;
+                    }
+                }
+                .tools-used{
                 
-//                 h2{ 
+                    h2{ 
+                        font-size:12px;
+                        
+                    }
+                    ul{
+                       
+                        li{
+                            font-size:10px;
+                            
+                        }
+                    }
+
+                }
+            }
+        }
+    }
+}
+@media(max-width:370px){
+    .home-content{
+        .card{
+            .card-front{
+                article{
+                    h2{
+                       
+                        font-size:16px;
+                    }
+                    p{
+                        font-size: 9px;
+                    }
+                }
+                .tools-used{
                 
-//                     font-size:22px;
-//                     color:black;
-//                 }
-//                 ul{
-//                     color:black;
-                   
-//                     li{
-//                         font-size:14px;
-//                         list-style-type: style auto;;
-//                     }
-//                 }
-//             }
-//             }
-//             .card-back{
-//                 //height:20vh;
+                    h2{ 
+                        font-size:11px;
+                        
+                    }
+                    ul{
+                       
+                        li{
+                            font-size:9px;
+                            
+                        }
+                    }
 
-//             }
-//         }
-//     }
-
-// }
+                }
+            }
+        }
+    }
+}

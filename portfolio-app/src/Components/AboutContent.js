@@ -24,7 +24,7 @@ function AboutContent() {
             Fast forward to now, nearly three years later, I'm fully ensconsed in code and I am loving it. I even debug my code in my dreams!
         </p>
     </article> 
-    <a href='#'>My Resume</a>
+    <a href='https://docs.google.com/document/d/1n6AaugYPWYeZf1irzHe7dRY524iXidT5iVuquQRYWJI/edit'>My Resume</a>
     </div>
 
   )
