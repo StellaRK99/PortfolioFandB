@@ -24,7 +24,7 @@ function Contact(){
     emailjs.sendForm('service_oa62r6f', 'template_ycxties', form.current, 'c2XBO2H-JtCQ8lqsc')
       .then((result) => {
       
-        setTouched("Sent!")
+        setTouched("Sent! Thank you for your message.")
         
         console.log(result.text);
            

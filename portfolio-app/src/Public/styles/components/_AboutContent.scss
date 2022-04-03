@@ -1,20 +1,19 @@
     .about-content{
-    font-family: 'Truculenta', sans-serif;
+    font-family: 'Space Mono', sans-serif;
     margin-top:5%;
     text-align:center;
-    a{
-
-        font-size:25px;
-    }
     h1{
-        font-size:40px;
-        color:black;
-        text-shadow: -2px -2px 0 white;
+        font-size:30px;
+        color:#29ff15;
         padding-top:20px;
         margin-bottom:15px;
         display:flex;
         justify-content: center;
         align-items: center;
+    }
+    a{
+        font-size:20px;
+        color:#a221b3;
     }
     article{
         box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
@@ -27,11 +26,11 @@
         margin:auto;
         margin-bottom:40px;
         p{
-            color:white;
+            color:#29ff15;
             padding: 15px 15px 15px 15px;
             margin:auto;
             padding-top:30px;
-            font-size:24px;
+            font-size:20px;
             border-radius:15%;
             text-align: center;
         
@@ -48,28 +47,18 @@
     }
 }
 
-@media(max-width: 1220px){
-
-    .about-content{
-        article{
-            
-        p{
-            font-size:22px;
-        }
-    }
-    }
-
-
-}
-
 
 @media(max-width: 695px){
 
     .about-content{
+        h1{
+            font-size:18px;
+        }
         article{
             width:75%;
+           
             p{
-            font-size:20px;
+            font-size:18px;
             }
         }
         img{
@@ -83,10 +72,14 @@
 
 @media(max-width:425px){
     .about-content{
+        h1{
+            font-size: 16px;
+        }
         article{
             width: 70%;
+
             p{
-                font-size:18px;
+                font-size:14px;
             }
             
         }
@@ -100,9 +93,12 @@
 
 @media(max-width:375px){
     .about-content{
+        h1{
+            font-size: 14px;
+        }
         article{
             p{
-                font-size:16px;
+                font-size:12px;
             }
           
             

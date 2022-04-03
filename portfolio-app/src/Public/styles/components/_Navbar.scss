@@ -1,5 +1,5 @@
 .nav-bar{
-    font-family: 'Shadows Into Light';
+    font-family: 'VT323';
     background-color: black;
     padding-bottom:10px;
     padding-left:20px;
@@ -14,10 +14,10 @@
         justify-content: space-between;
  
         a{
-            margin-top:15px;
+            margin-top:20px;
             padding-bottom:5px;
             color:white;
-            font-size:32px;
+            font-size:28px;
             text-decoration:none;
             position: relative;
             text-decoration: none;
@@ -32,14 +32,14 @@
             height: 3px;
             left: 50%;
             position: absolute;
-            background: #b1f1fc;
+            background: #29ff15;
             transition: width 0.3s ease 0s, left .6s ease 0s;
             width: 0;
         }
 
         a:hover{
-            border-bottom:2px solid white;
-            color:#b1f1fc;
+            border-bottom:2px solid black;
+            color:#29ff15;
  
         }
         a:hover:after{

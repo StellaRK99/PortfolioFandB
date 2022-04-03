@@ -1,9 +1,9 @@
 @import url("https://fonts.googleapis.com/css2?family=Black+Han+Sans&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Truculenta&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Shadows+Into+Light&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Space+Mono&family=Dancing+Script&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=VT323&family=Passion+One&display=swap");
 .contact {
   height: 100vh;
-  font-family: 'Truculenta', sans-serif;
+  font-family: 'Space Mono', sans-serif;
   width: 100%;
 }
 
@@ -20,13 +20,13 @@
   margin-bottom: 2%;
   -ms-flex-preferred-size: 100%;
       flex-basis: 100%;
-  font-size: 40px;
-  color: black;
-  text-shadow: -2px -2px 0 white;
+  font-size: 30px;
+  color: #29ff15;
   text-align: center;
 }
 
 .contact .contact-content form {
+  border: 1px solid white;
   background-color: #0f0f0f;
   padding: 10px 10px 10px 10px;
   margin-bottom: 5%;
@@ -61,7 +61,7 @@
   color: white;
   -ms-flex-preferred-size: 100%;
       flex-basis: 100%;
-  font-size: 30px;
+  font-size: 24px;
   margin-left: 5px;
 }
 
@@ -71,7 +71,7 @@
   height: 50px;
   width: 60px;
   font-size: 20px;
-  font-family: 'Truculenta', sans-serif;
+  font-family: 'Space Mono', sans-serif;
   background-color: black;
   border: 2px solid white;
   border-radius: 15px;
@@ -85,9 +85,18 @@
           transform: scale(1.1);
 }
 
+@media (max-width: 695px) {
+  .contact .contact-content h1 {
+    font-size: 20px;
+  }
+  .contact .contact-content form label {
+    font-size: 20px;
+  }
+}
+
 @media (max-width: 450px) {
   .contact .contact-content h1 {
-    font-size: 30px;
+    font-size: 18px;
   }
   .contact .contact-content form {
     width: 70%;
@@ -96,7 +105,7 @@
     width: 90%;
   }
   .contact .contact-content form label {
-    font-size: 20px;
+    font-size: 18px;
   }
   .contact .contact-content form button {
     font-size: 16px;
@@ -108,11 +117,15 @@
 }
 
 .banner {
-  font-family: 'Black Han Sans', sans-serif;
+  font-family: 'Titan One', sans-serif;
+  font-family: 'Black Han Sans';
   height: 100vh;
   background-color: black;
-  -webkit-box-shadow: #26394d 0px 20px 30px -10px;
-          box-shadow: #26394d 0px 20px 30px -10px;
+  -webkit-box-shadow: #28ff1536 0px 20px 70px -10px;
+          box-shadow: #28ff1536 0px 20px 70px -10px;
+  z-index: 9;
+  position: -webkit-sticky;
+  position: sticky;
 }
 
 .banner h1 {
@@ -127,18 +140,20 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  text-shadow: 15px -9px 0 white;
-  background: linear-gradient(60deg, #0d33ad, #62f0e4);
+  text-shadow: 7px -6px 0 #e3e9e2;
+  background: linear-gradient(60deg, #082401, #29ff15);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   padding-top: 10%;
   height: 20%;
+  font-style: italic;
   width: 100%;
+  padding-top: 50px;
 }
 
 .banner h2 {
   background-color: white;
-  font-size: 50px;
+  font-size: 40px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -152,7 +167,7 @@
   -webkit-text-fill-color: transparent;
   height: 10%;
   width: 100%;
-  font-family: 'Shadows Into Light';
+  font-family: 'VT323';
   font-style: italic;
 }
 
@@ -170,7 +185,7 @@
     font-size: 65px;
   }
   .banner h2 {
-    font-size: 45px;
+    font-size: 24px;
   }
 }
 
@@ -179,7 +194,7 @@
     font-size: 50px;
   }
   .banner h2 {
-    font-size: 40px;
+    font-size: 22px;
   }
 }
 
@@ -188,16 +203,15 @@
     font-size: 42px;
   }
   .banner h2 {
-    font-size: 35px;
+    font-size: 20px;
   }
 }
 
 .burger {
-  font-family: 'Shadows Into Light';
+  font-family: 'Space Mono';
   display: none;
   background-color: black;
   width: 100%;
-  position: relative;
 }
 
 .burger .burger-btn {
@@ -207,15 +221,14 @@
   margin-bottom: 3%;
   margin-top: 3%;
   margin-left: 3%;
-  border: 3px solid #b1f1fc;
+  border: 3px solid #29ff15;
   border-radius: 20%;
 }
 
 .burger .burger-nav {
-  height: 18vh;
+  height: 17vh;
   background: black;
   position: absolute;
-  z-index: 9;
   top: 10;
   width: 100%;
   padding-top: 5px;
@@ -239,12 +252,18 @@
 }
 
 .burger a:hover {
-  color: #62f0e4;
+  color: #29ff15;
 }
 
 @media (max-width: 600px) {
   .burger {
     display: inline-block;
+  }
+  .burger .burger-nav {
+    position: relative;
+  }
+  .burger .burger-nav a {
+    z-index: 10;
   }
 }
 
@@ -261,7 +280,9 @@
 }
 
 footer {
-  border-top: 1px solid white;
+  position: -webkit-sticky;
+  position: sticky;
+  z-index: 9;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -274,12 +295,12 @@ footer {
   background-color: black;
   height: 200px;
   width: 100%;
-  font-family: 'Truculenta';
+  font-family: 'Space Mono';
   margin-top: 10%;
 }
 
 footer h1 {
-  font-size: 30px;
+  font-size: 20px;
   color: white;
 }
 
@@ -303,53 +324,52 @@ footer .links {
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  font-family: 'Truculenta';
   position: absolute;
   width: 2%;
   left: 20px;
 }
 
 footer .links h1 {
-  border-bottom: 1px solid white;
-  font-size: 20px;
+  border-bottom: 1px solid #29ff15;
+  font-size: 18px;
   margin-bottom: 10px;
 }
 
 footer .links a {
-  font-size: 18px;
+  font-size: 16px;
   text-decoration: none;
   color: white;
 }
 
 footer .links a:hover {
-  color: #62f0e4;
+  color: #29ff15;
 }
 
 @media (max-width: 650px) {
   footer h1 {
-    font-size: 20px;
+    font-size: 16px;
   }
   footer .logos .l-in img {
     width: 28px;
     height: 25px;
   }
+  footer .links h1 {
+    font-size: 14px;
+  }
+  footer .links a {
+    font-size: 12px;
+  }
 }
 
 @media (max-width: 350px) {
   footer h1 {
-    font-size: 16px;
-    margin-right: 5%;
-  }
-  footer .links h1 {
-    font-size: 18px;
-  }
-  footer .links a {
-    font-size: 14px;
+    margin-right: 10%;
+    font-size: 12px;
   }
 }
 
 .nav-bar {
-  font-family: 'Shadows Into Light';
+  font-family: 'VT323';
   background-color: black;
   padding-bottom: 10px;
   padding-left: 20px;
@@ -370,10 +390,10 @@ footer .links a:hover {
 }
 
 .nav-bar nav a {
-  margin-top: 15px;
+  margin-top: 20px;
   padding-bottom: 5px;
   color: white;
-  font-size: 32px;
+  font-size: 28px;
   text-decoration: none;
   position: relative;
   text-decoration: none;
@@ -389,15 +409,15 @@ footer .links a:hover {
   height: 3px;
   left: 50%;
   position: absolute;
-  background: #b1f1fc;
+  background: #29ff15;
   -webkit-transition: width 0.3s ease 0s, left .6s ease 0s;
   transition: width 0.3s ease 0s, left .6s ease 0s;
   width: 0;
 }
 
 .nav-bar nav a:hover {
-  border-bottom: 2px solid white;
-  color: #b1f1fc;
+  border-bottom: 2px solid black;
+  color: #29ff15;
 }
 
 .nav-bar nav a:hover:after {
@@ -495,7 +515,7 @@ footer .links a:hover {
 
 .home-content {
   height: 100%;
-  font-family: 'Truculenta', cursive;
+  font-family: 'Space Mono', cursive;
   width: 100%;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
@@ -513,7 +533,7 @@ footer .links a:hover {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  width: 75%;
+  width: 80%;
   -ms-flex-preferred-size: 100%;
       flex-basis: 100%;
   height: 70vh;
@@ -540,27 +560,28 @@ footer .links a:hover {
   padding: 2rem;
   color: white;
   background-color: white;
+  background-color: #0f0f0f;
 }
 
 .home-content .card .card-front article {
-  border-bottom: 1px solid #0f0f0f;
+  border-bottom: 1px solid #29ff15;
   padding-bottom: 2px;
 }
 
 .home-content .card .card-front article h2 {
   padding-left: 5px;
-  color: white;
   margin: auto;
   margin-bottom: 10px;
-  background-color: #0f0f0f;
+  background-color: #29ff15;
+  color: black;
   width: 100%;
-  font-size: 35px;
+  font-size: 26px;
 }
 
 .home-content .card .card-front article p {
   text-align: center;
-  font-size: 20px;
-  color: black;
+  font-size: 16px;
+  color: #29ff15;
 }
 
 .home-content .card .card-front .tools-used {
@@ -573,16 +594,18 @@ footer .links a:hover {
   color: white;
   margin: auto;
   width: 100%;
-  font-size: 26px;
+  font-size: 20px;
   color: black;
+  color: #29ff15;
 }
 
 .home-content .card .card-front .tools-used ul {
   color: black;
+  color: #29ff15;
 }
 
 .home-content .card .card-front .tools-used ul li {
-  font-size: 20px;
+  font-size: 15px;
   list-style-type: style auto;
 }
 
@@ -628,19 +651,25 @@ footer .links a:hover {
 
 @media (max-width: 1024px) {
   .home-content .card .card-front article p {
-    font-size: 16px;
+    font-size: 15px;
   }
   .home-content .card .card-front .tools-used h2 {
     font-size: 19px;
   }
   .home-content .card .card-front .tools-used ul li {
-    font-size: 15px;
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 960px) {
+  .home-content .card {
+    width: 85%;
   }
 }
 
 @media (max-width: 800px) {
   .home-content .card .card-front article h2 {
-    font-size: 20px;
+    font-size: 18px;
   }
   .home-content .card .card-front article p {
     font-size: 14px;
@@ -649,7 +678,7 @@ footer .links a:hover {
     font-size: 17px;
   }
   .home-content .card .card-front .tools-used ul li {
-    font-size: 14px;
+    font-size: 13px;
   }
   .home-content .card .card-back {
     width: 90%;
@@ -676,13 +705,13 @@ footer .links a:hover {
     font-size: 18px;
   }
   .home-content .card .card-front article p {
-    font-size: 12px;
+    font-size: 11px;
   }
   .home-content .card .card-front .tools-used h2 {
     font-size: 14px;
   }
   .home-content .card .card-front .tools-used ul li {
-    font-size: 11px;
+    font-size: 10px;
   }
 }
 
@@ -703,7 +732,7 @@ footer .links a:hover {
 
 @media (max-width: 370px) {
   .home-content .card .card-front article h2 {
-    font-size: 16px;
+    font-size: 15px;
   }
   .home-content .card .card-front article p {
     font-size: 9px;
@@ -717,19 +746,14 @@ footer .links a:hover {
 }
 
 .about-content {
-  font-family: 'Truculenta', sans-serif;
+  font-family: 'Space Mono', sans-serif;
   margin-top: 5%;
   text-align: center;
 }
 
-.about-content a {
-  font-size: 25px;
-}
-
 .about-content h1 {
-  font-size: 40px;
-  color: black;
-  text-shadow: -2px -2px 0 white;
+  font-size: 30px;
+  color: #29ff15;
   padding-top: 20px;
   margin-bottom: 15px;
   display: -webkit-box;
@@ -741,6 +765,11 @@ footer .links a:hover {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+
+.about-content a {
+  font-size: 20px;
+  color: #a221b3;
 }
 
 .about-content article {
@@ -757,11 +786,11 @@ footer .links a:hover {
 }
 
 .about-content article p {
-  color: white;
+  color: #29ff15;
   padding: 15px 15px 15px 15px;
   margin: auto;
   padding-top: 30px;
-  font-size: 24px;
+  font-size: 20px;
   border-radius: 15%;
   text-align: center;
 }
@@ -777,18 +806,15 @@ footer .links a:hover {
   margin-bottom: 30px;
 }
 
-@media (max-width: 1220px) {
-  .about-content article p {
-    font-size: 22px;
-  }
-}
-
 @media (max-width: 695px) {
+  .about-content h1 {
+    font-size: 18px;
+  }
   .about-content article {
     width: 75%;
   }
   .about-content article p {
-    font-size: 20px;
+    font-size: 18px;
   }
   .about-content img {
     width: 150px;
@@ -797,11 +823,14 @@ footer .links a:hover {
 }
 
 @media (max-width: 425px) {
+  .about-content h1 {
+    font-size: 16px;
+  }
   .about-content article {
     width: 70%;
   }
   .about-content article p {
-    font-size: 18px;
+    font-size: 14px;
   }
   .about-content img {
     width: 120px;
@@ -810,8 +839,11 @@ footer .links a:hover {
 }
 
 @media (max-width: 375px) {
+  .about-content h1 {
+    font-size: 14px;
+  }
   .about-content article p {
-    font-size: 16px;
+    font-size: 12px;
   }
   .about-content img {
     width: 110px;
@@ -1121,7 +1153,7 @@ footer .links a:hover {
   left: 15px;
   position: absolute;
   width: 20px;
-  border: 2.5px solid black;
+  border: 2.5px solid #29ff15;
   border-radius: 15px;
   -webkit-transform: rotate(45deg);
           transform: rotate(45deg);
@@ -1130,7 +1162,7 @@ footer .links a:hover {
 .arrow-line2 {
   position: absolute;
   width: 20px;
-  border: 2.5px solid black;
+  border: 2.5px solid #29ff15;
   border-radius: 15px;
   -webkit-transform: rotate(-45deg);
           transform: rotate(-45deg);
@@ -1150,6 +1182,6 @@ footer .links a:hover {
 
 html {
   scroll-behavior: smooth;
-  background-color: #b1f1fc;
+  background-color: #080808;
 }
 /*# sourceMappingURL=styles.css.map */

@@ -4,13 +4,13 @@ import '../Public/styles/styles.css'
 
 function Navbar() {
     return (
-        <div className="nav-bar">         
+        <section className="nav-bar">         
             <nav>
                 <Link to="/">Home</Link>
                 <Link to="/Projects">Projects</Link>
                 <Link to="/Contact">Contact</Link>
             </nav>       
-        </div> 
+        </section> 
     )
 }
 

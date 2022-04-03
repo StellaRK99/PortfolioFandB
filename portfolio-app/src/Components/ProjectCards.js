@@ -5,25 +5,8 @@ import ProjectThreeCarosel from './ProjectThreeCarosel';
 import '../Public/styles/styles.css';
 
 function ProjectCards() {
-
-    // const [tapped1, setTapped1]= useState(false)
-    // const [tapped2, setTapped2]= useState(false)
-    // const [tapped3, setTapped3]= useState(false)
-
-    // function toggle1(){
-    //     setTapped1(!tapped1)
-    //     console.log(tapped1)
-    // }
-    // function toggle2(){
-    //     setTapped2(!tapped2)
-    //     console.log(tapped2)
-    // }
-    // function toggle3(){
-    //     setTapped3(!tapped3)
-    //     console.log(tapped3)
-    // }
   return (
-    <div className="home-content">
+    <section className="home-content">
     <div className="card">
         
         <div className="card-front">
@@ -56,17 +39,6 @@ function ProjectCards() {
         <div className="card-back">
         <ProjectOneCarosel />
         </div>
-
-{/* 
-        {tapped1
-        ?(<div className="card-front-mobile">
-        <ProjectOneCarosel />
-        <button onClick={toggle1}>Back</button>
-        </div>): <></>} */}
-      
-       
-
-       
     </div>
 
     <div className="card">
@@ -99,13 +71,7 @@ function ProjectCards() {
         <div className="card-back">
           <ProjectTwoCarosel />
         </div>
-{/* 
-        {tapped2
-        ?(<div className="card-front-mobile">
-        <ProjectTwoCarosel />
-        <button onClick={toggle2}>Back</button>
-        </div>): <></>} */}
-      
+
        
     </div>
 
@@ -134,7 +100,6 @@ function ProjectCards() {
                     <li>Lorem ipsum dolor, sit amet consectetur adipisicing el</li>
 
                 </ul>
-                {/* <button className="mobile-toggle" onClick={toggle3}>View Images</button> */}
             </div> 
         </div>
 
@@ -143,15 +108,10 @@ function ProjectCards() {
             
         </div>
 
-        {/* {tapped3
-        ?(<div className="card-front-mobile">
-        <ProjectThreeCarosel />
-        <button onClick={toggle3}>Back</button>
-        </div>): <></>}
-       */}
+
        
     </div>
-</div>
+</section>
   )
 }
 

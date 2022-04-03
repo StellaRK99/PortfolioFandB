@@ -11,7 +11,7 @@ import '../Public/styles/styles.css';
 function ProjectThreeCarosel() {
   return (
       
-    <div className='project-three-carosel'>
+    <section className='project-three-carosel'>
 
         <div className="Card">
     
@@ -48,7 +48,7 @@ function ProjectThreeCarosel() {
             <a href="#">Live Link</a>
         </div>
      
-        </div>
+        </section>
   )
 }
 

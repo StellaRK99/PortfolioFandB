@@ -6,7 +6,7 @@ import BoucingArrow from './BoucingArrow';
 
 function Banner() {
   return (
-    <div className="banner">
+    <section className="banner">
       <Link to="/"> 
       <Typist>
         <h1>Stella Kagri</h1>
@@ -16,7 +16,7 @@ function Banner() {
       </Typist>
       </Link>   
       <BoucingArrow />
-    </div>
+    </section>
   )
 }
 

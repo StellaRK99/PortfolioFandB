@@ -11,7 +11,7 @@ import '../Public/styles/styles.css';
 function ProjectOneCarosel() {
   return (
       
-    <div className='project-one-carosel'>
+    <section className='project-one-carosel'>
   
         <div className="Card">
 
@@ -50,7 +50,7 @@ function ProjectOneCarosel() {
        
             </div>
      
-        </div>
+        </section>
   )
 }
 

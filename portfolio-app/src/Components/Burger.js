@@ -17,7 +17,7 @@ function Burger() {
   }
 
   return (
-    <div className="burger">
+    <section className="burger">
         <button className="burger-btn" onClick={toggleBurger}></button>
         {!toggle
           ?(<nav className="burger-nav">
@@ -27,7 +27,7 @@ function Burger() {
             </nav>)
           :(<></>)
         }
-    </div>
+    </section>
   )
 }
 

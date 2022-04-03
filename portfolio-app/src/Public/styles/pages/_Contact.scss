@@ -1,6 +1,6 @@
 .contact{
     height:100vh;
-    font-family: 'Truculenta', sans-serif;
+    font-family: 'Space Mono', sans-serif;
     width:100%;
     .contact-content{      
         display: flex;
@@ -9,12 +9,13 @@
             margin-top:5%;
             margin-bottom:2%;
             flex-basis:100%;
-            font-size:40px;
-            color:black;
-            text-shadow: -2px -2px 0 white;
+            font-size:30px;
+            color:#29ff15;
+            //text-shadow: -2px -2px 0 white;
             text-align: center;
         }
         form{
+            border:1px solid white;
             background-color: rgb(15, 15, 15);
             padding: 10px 10px 10px 10px;
             margin-bottom:5%;
@@ -39,7 +40,7 @@
             label{
                 color:white;
                 flex-basis:100%;
-                font-size:30px;
+                font-size:24px;
                 margin-left:5px;
     
             }
@@ -48,7 +49,7 @@
                 height:50px;
                 width:60px;
                 font-size:20px;
-                font-family: 'Truculenta', sans-serif;
+                font-family: 'Space Mono', sans-serif;
                 background-color: black;
                 border:2px solid white;
                 border-radius:15px;
@@ -65,11 +66,29 @@
 }
 }
 
+@media(max-width: 695px){
+.contact{
+    .contact-content{
+        h1{
+            font-size:20px;
+        }
+        form{
+            label{
+                font-size:20px;
+            }
+        }
+    }
+
+
+}
+}
+
+
 @media(max-width:450px){
     .contact{
         .contact-content{
             h1{
-                font-size:30px;
+                font-size:18px;
             }
             form{
                 width:70%;
@@ -77,7 +96,7 @@
                     width:90%;
                 }
                 label{
-                    font-size:20px;
+                    font-size:18px;
                 }
                 button{
                     font-size:16px;

@@ -1,11 +1,9 @@
 .burger{
-    font-family: 'Shadows Into Light';
+    font-family: 'Space Mono';
     display: none;
     background-color: black;
     width:100%;
-   // height:100%;
-   
-    position:relative;
+   // height:100%;  
     .burger-btn{
         background-color: black;
         height:25px;
@@ -13,17 +11,15 @@
         margin-bottom:3%;
         margin-top:3%;
         margin-left:3%;
-        border:3px solid #b1f1fc;
+        border:3px solid #29ff15;
         border-radius: 20%;
     }
     .burger-nav{
-        height:18vh;
+        height:17vh;
         background: black;
         position:absolute;
-        z-index:9;
         top:10;
         width:100%;
-        //height:100%;
         padding-top:5px;
         padding-bottom:10px;
         padding-left:2%;
@@ -39,14 +35,21 @@
         }
     } 
     a:hover{
-        color:#62f0e4;
+        color:#29ff15;
     }
 }
 
 @media(max-width:600px){
     .burger{
         display:inline-block;
-
+        
+        .burger-nav{
+        position:relative;
+        a{
+            
+            z-index:10;
+        }
+        }
     }
 }
 @media(max-width:520px){

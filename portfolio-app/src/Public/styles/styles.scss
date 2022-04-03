@@ -1,7 +1,7 @@
 //FONTS
 @import url('https://fonts.googleapis.com/css2?family=Black+Han+Sans&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Truculenta&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Shadows+Into+Light&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Space+Mono&family=Dancing+Script&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=VT323&family=Passion+One&display=swap');
 
 //PAGES
 @import './pages/Contact';
@@ -23,5 +23,6 @@
 
 html {
     scroll-behavior: smooth;
-    background-color:#b1f1fc;
+    background-color: rgb(8, 8, 8);
+    
   }

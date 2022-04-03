@@ -3,7 +3,7 @@ import '../Public/styles/styles.css';
 
 function BoucingArrow() {
   return (
-    <div class="arrow bounce"></div>
+    <div className="arrow bounce"></div>
   )
 }
 
